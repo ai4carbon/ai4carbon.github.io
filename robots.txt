@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ai4carbon.github.io/sitemap.xml
