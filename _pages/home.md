@@ -22,24 +22,34 @@ The **AI4Carbon side event at ICDC11** is a community effort aiming to alleviate
 
 ## Schedule
 
-| Time  | What?                                                                       | Who?      |
-| ----- | --------------------------------------------------------------------------- | --------- |
-| 14:00 | Welcome                                                                     | Conveners |
-| 14:15 | Invited Talk: AI for Science                                                | TBA       |
-| 14:45 | Invited Talk: Atmospheric Transport                                         | TBA       |
-| 15:15 | Lightning Talk                                                              | TBA       |
-| 15:35 | Lightning Talk                                                              | TBA       |
-| 16:00 | Coffee Break                                                                |           |
-| 16:15 | Breakout Groups: Towards a Community Effort on AI for Atmospheric Transport |           |
-| 17:45 | Plenary Session                                                             | Conveners |
-| 19:00 | Closing                                                                     |           |
+* 14:00 - 9:15 / **Welcome and opening remarks** :raised_hands:
+
+* 14:15 - 14:45 / <strong>Invited Talk</strong> <b><i>AI for Science</i></b>, TBA
+* 14:45 - 15:15 / <strong>Invited Talk</strong> <b><i>Atmospheric Transport</i></b>, TBA
+* 15:15 - 15:35 / <strong>Lightning Talk</strong> <b><i>AI for Carbon</i></b>, TBA
+* 15:35 - 15:55 / <strong>Lightning Talk</strong> <b><i>AI for Carbon</i></b>, TBA
+
+* 15:55 - 16:15 / **Coffee break** :coffee:
+
+* 16:15 - 17:45 / <strong><u>Breakout Groups:</u> Towards a Community Effort on AI for Atmospheric Transport</strong> :mega:
+
+  * Datasets
+  
+  * Evaluation
+  
+  * Methods
+
+* 17:45 - 19:00 / **Closing Plenary Session** :wave:
+
+* 19:00 / **Social Dinner** :spaghetti:
+
 
 ## Organizers
 
 <div class="row row-cols-2 projects pt-3 pb-3">
-  {% include people_horizontal.liquid name="Vitus Benson" affiliation="ELLIS Unit Jena" url="https://vitusbenson.github.io/" img="assets/img/organizers/vitus_benson.png" %}
+  {% include people_horizontal.liquid name="Vitus Benson" affiliation="Max Planck Institute for Biogeochemistry" url="https://vitusbenson.github.io/" img="assets/img/organizers/vitus_benson.png" %}
   {% include people_horizontal.liquid name="Sam Upton" affiliation="Max Planck Institute for Biogeochemistry" url="https://www.bgc-jena.mpg.de/person/supton/4955530" img="assets/img/organizers/sam_upton.png" %}
   {% include people_horizontal.liquid name="Markus Reichstein" affiliation="Max Planck Institute for Biogeochemistry" url="https://www.bgc-jena.mpg.de/en/reichstein.html" img="assets/img/organizers/markus_reichstein.png" %}
-  {% include people_horizontal.liquid name="Gianpaolo Balsamo" affiliation="Global Greenhouse Gas Watch (G3W) / World Meteorological Organization" url="https://www.cvernade.com/" img="assets/img/organizers/gianpaolo_balsamo.png" %}
+  {% include people_horizontal.liquid name="Gianpaolo Balsamo" affiliation="Global Greenhouse Gas Watch (G3W) & WMO" url="https://www.cvernade.com/" img="assets/img/organizers/gianpaolo_balsamo.png" %}
 
 </div>
