@@ -13,7 +13,7 @@ layout: default
         <!-- News -->
         {% if page.news and site.announcements.enabled -%}
         <h3>Announcements</h3>
-        {%- include news.html limit=true %}
+        {%- include news.liquid limit=true %}
         {%- endif %}
 
         <div class="clearfix">
