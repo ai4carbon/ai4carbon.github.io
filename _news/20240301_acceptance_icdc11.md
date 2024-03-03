@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:tada: Our side event has been provisionally accepted for [ICDC 11](https://icdc11.com)!
+:tada: Our side event has been provisionally accepted for [ICDC 11](https://www.icdc11.com)!
