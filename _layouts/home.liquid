@@ -2,21 +2,22 @@
 layout: default
 ---
 <div class="post">
-<header class="post-header">
-    <h1 class="post-title">
-    {{ page.page_title }}
-    </h1>
-    <p class="desc">{{ page.page_subtitle }}</p>
-</header>
+    <header class="post-header">
+        <h1 class="post-title">
+        {{ page.page_title }}
+        </h1>
+        <p class="desc">{{ page.page_subtitle }}</p>
+    </header>
 
-<article>
-    <!-- News -->
-    {% if page.news and site.announcements.enabled -%}
-    <h3>Announcements</h3>
-    {%- include news.html limit=true %}
-    {%- endif %}
+    <article>
+        <!-- News -->
+        {% if page.news and site.announcements.enabled -%}
+        <h3>Announcements</h3>
+        {%- include news.html limit=true %}
+        {%- endif %}
 
-    <div class="clearfix">
-    {{ content }}
-    </div>
-</article>
+        <div class="clearfix">
+        {{ content }}
+        </div>
+    </article>
+</div>
