@@ -534,6 +534,16 @@ footer.sticky-bottom {
   }
 }
 
+.post-header {
+  h1, p {
+    text-align: center;
+  }
+
+  .desc {
+    margin-bottom: 40px;
+  }
+}
+
 .post-title {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
