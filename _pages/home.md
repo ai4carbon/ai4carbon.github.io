@@ -56,3 +56,8 @@ Yet, in contrast to NWP, which has ERA-5, there is currently no consensus on a g
   {% include people_horizontal.liquid name="Wouter Peters" affiliation="Wageningen University" url="https://www.wur.nl/en/persons/wouter-peters.htm" img="assets/img/organizers/wouter_peters.png" %}
 
 </div>
+
+
+## Contact
+
+If you are interested in joining the collaborative effort, please reach out to vbenson (at) bgc-jena (dot) mpg (dot) de!
