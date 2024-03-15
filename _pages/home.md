@@ -15,7 +15,7 @@ Recent advances in artificial intelligence (AI) have enabled a step-change in Me
 
 Conversely, in the realm of inverse modeling of the Carbon Cycle — a process integral to deducing surface fluxes from atmospheric concentrations — challenges persist due to the employment of relatively coarse-resolution transport models. These models are hindered by inherent transport errors, attributed to limitations such as imprecise sub-grid-scale parameterizations and numerical discrepancies spawned by partial differential equation (PDE) solvers operating at diminished resolutions. The conventional approach of enhancing model fidelity through increased resolution in inverse modeling is hampered by prohibitive computational demands.
 
-In light of these constraints, an alternative proposition emerges, advocating for the strategic application of AI to ameliorate model accuracy even at lower resolutions. This innovative approach could entail the training of machine learning architectures using outputs from high-resolution transport models or direct emulation of the inverse procedure. Through this training process, the AI-model is envisioned to acquire the capability to autonomously identify and rectify the erroneous parameterizations and numerical inaccuracies inherent in lower-resolution models, thereby offering a promising avenue to circumvent computational limitations while elevating model precision.
+In light of these constraints, an alternative proposition emerges, advocating for the strategic application of AI to ameliorate model accuracy even at lower resolutions. This innovative approach could entail the training of machine learning architectures using outputs from high-resolution transport models or direct emulation of the inverse procedure. Through this training process, the AI-model is envisioned to acquire the capability to autonomously identify and rectify the erroneous parameterizations and numerical inaccuracies inherent in lower-resolution models, thereby offering a promising avenue to circumvent computational limitations while elevating model resolution and accuracy.
 
 Yet, in contrast to NWP, which has ERA-5, there is currently no consensus on a good training dataset for atmospheric transport of carbon dioxide. The **AI4Carbon side event at ICDC11** is a community effort aiming to alleviate this bottleneck and build a benchmark dataset as well as a thorough evaluation framework. Since the endeavor is broad, it requires collaboration from the experienced transport and inverse modeling community as well as machine learning researchers. Together we can achieve AI-based CO2 transport, thereby supporting the Global Greenhouse Gas Watch (G3W) of WMO.
 
@@ -56,7 +56,6 @@ Yet, in contrast to NWP, which has ERA-5, there is currently no consensus on a g
   {% include people_horizontal.liquid name="Wouter Peters" affiliation="Wageningen University" url="https://www.wur.nl/en/persons/wouter-peters.htm" img="assets/img/organizers/wouter_peters.png" %}
 
 </div>
-
 
 ## Contact
 
