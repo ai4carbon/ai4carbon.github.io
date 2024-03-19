@@ -40,21 +40,28 @@ Yet, in contrast to NWP, which has ERA-5, there is currently no consensus on a g
 
 - 19:00 / **Social Dinner** :spaghetti:
 
-## Organizers
+## Organizing Committee
 
 <div class="row row-cols-2 projects pt-3 pb-3">
   {% include people_horizontal.liquid name="Vitus Benson" affiliation="Max Planck Institute for Biogeochemistry" url="https://vitusbenson.github.io/" img="assets/img/organizers/vitus_benson.png" %}
-  {% include people_horizontal.liquid name="Sam Upton" affiliation="Max Planck Institute for Biogeochemistry" url="https://www.bgc-jena.mpg.de/person/supton/4955530" img="assets/img/organizers/sam_upton.png" %}
-  {% include people_horizontal.liquid name="Yuming Jin" affiliation="NCAR" url="https://www.linkedin.com/in/yuming-jin-306a7b126" img="assets/img/organizers/yuming_jin.png" %}
-  {% include people_horizontal.liquid name="Tai-Long He" affiliation="University of Washington" url="https://tailonghe.github.io/" img="assets/img/organizers/tailong_he.png" %}
   {% include people_horizontal.liquid name="Nikhil Dadheech" affiliation="University of Washington" url="https://nd349.github.io/" img="assets/img/organizers/nikhil_dadheech.png" %}
-  {% include people_horizontal.liquid name="Markus Reichstein" affiliation="Max Planck Institute for Biogeochemistry" url="https://www.bgc-jena.mpg.de/en/reichstein.html" img="assets/img/organizers/markus_reichstein.png" %}
+  {% include people_horizontal.liquid name="Tai-Long He" affiliation="University of Washington" url="https://tailonghe.github.io/" img="assets/img/organizers/tailong_he.png" %}
+  {% include people_horizontal.liquid name="Yuming Jin" affiliation="NCAR" url="https://www.linkedin.com/in/yuming-jin-306a7b126" img="assets/img/organizers/yuming_jin.png" %}
+  {% include people_horizontal.liquid name="Sam Upton" affiliation="Max Planck Institute for Biogeochemistry" url="https://www.bgc-jena.mpg.de/person/supton/4955530" img="assets/img/organizers/sam_upton.png" %}
+</div>
+
+## Advisory Board
+
+<div class="row row-cols-2 projects pt-3 pb-3">
+  {% include people_horizontal.liquid name="Anna Agusti-Panareda" affiliation="ECMWF & CAMS" url="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/anna-agusti-panareda" img="assets/img/organizers/anna_agustipanareda.png" %}
   {% include people_horizontal.liquid name="Gianpaolo Balsamo" affiliation="Global Greenhouse Gas Watch (G3W) & WMO" url="https://wmo.int/profile/gianpaolo-balsamo" img="assets/img/organizers/gianpaolo_balsamo.png" %}
+  {% include people_horizontal.liquid name="Ana Bastos" affiliation="Leipzig University" url="https://www.bgc-jena.mpg.de/person/abastos/4680491" img="assets/img/organizers/ana_bastos.png" %}
   {% include people_horizontal.liquid name="Frédéric Chevallier" affiliation="LSCE & CAMS" url="https://www.lsce.ipsl.fr/Phocea/Pisp/index.php?nom=frederic.chevallier" img="assets/img/organizers/frederic_chevallier.png" %}
+  {% include people_horizontal.liquid name="Anna Michalak" affiliation="Carnegie" url="https://bse.carnegiescience.edu/dr-anna-michalak-0" img="assets/img/organizers/anna_michalak.png" %}
+  {% include people_horizontal.liquid name="Wouter Peters" affiliation="Wageningen University" url="https://www.wur.nl/en/persons/wouter-peters.htm" img="assets/img/organizers/wouter_peters.png" %}
+  {% include people_horizontal.liquid name="Markus Reichstein" affiliation="Max Planck Institute for Biogeochemistry" url="https://www.bgc-jena.mpg.de/en/reichstein.html" img="assets/img/organizers/markus_reichstein.png" %}
   {% include people_horizontal.liquid name="Britt Stephens" affiliation="NCAR" url="https://staff.ucar.edu/users/stephens" img="assets/img/organizers/britt_stephens.png" %}
   {% include people_horizontal.liquid name="Alex Turner" affiliation="University of Washington" url="https://alexjturner.github.io/index.html" img="assets/img/organizers/alex_turner.png" %}
-  {% include people_horizontal.liquid name="Wouter Peters" affiliation="Wageningen University" url="https://www.wur.nl/en/persons/wouter-peters.htm" img="assets/img/organizers/wouter_peters.png" %}
-
 </div>
 
 ## Contact
