@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:globe_with_meridians: To allow for truly participation, AI4Carbon is going to be a virtual side event of ICDC. Dates TBA soon!
-
+:globe_with_meridians: To allow for truly global participation, AI4Carbon is going to be a virtual side event of ICDC. Dates TBA soon!

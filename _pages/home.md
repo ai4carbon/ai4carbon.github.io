@@ -20,7 +20,15 @@ Yet, in contrast to NWP, which has ERA-5, there is currently no consensus on a g
 
 ## Call for Interest
 
+<style>
+.responsive-wrap iframe{ max-width: 100%;}
+</style>
+<div class="responsive-wrap">
+<!-- this is the embed code provided by Google -->
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKQbUhrKQLhcrZGWb_mi350rhTWzjOpMYXgnjaTKrrigQqwQ/viewform?embedded=true" width="640" height="1032" frameborder="0" marginheight="0" marginwidth="0">Loading Google Form…</iframe>
+<!-- Google embed ends -->
+</div>
+
 
 ## Topics for discussion
 
