@@ -4,8 +4,7 @@ title: home
 permalink: /
 page_title: "AI4Carbon: Machine Learning meets Atmospheric Transport"
 page_subtitle: >
-  A side event at <a href="https://www.icdc11.com/">ICDC 11</a>,
-  31 July 2024, Manaus (Brazil) & Online
+  A virtual side event at <a href="https://www.icdc11.com/">ICDC 11</a>
 news: true # includes a list of news items
 ---
 
@@ -19,7 +18,21 @@ In light of these constraints, an alternative proposition emerges, advocating fo
 
 Yet, in contrast to NWP, which has ERA-5, there is currently no consensus on a good training dataset for atmospheric transport of carbon dioxide. The **AI4Carbon side event at ICDC11** is a community effort aiming to alleviate this bottleneck and build a benchmark dataset as well as a thorough evaluation framework. Since the endeavor is broad, it requires collaboration from the experienced transport and inverse modeling community as well as machine learning researchers. Together we can achieve AI-based CO2 transport, thereby supporting the Global Greenhouse Gas Watch (G3W) of WMO.
 
-## Schedule
+## Call for Interest
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKQbUhrKQLhcrZGWb_mi350rhTWzjOpMYXgnjaTKrrigQqwQ/viewform?embedded=true" width="640" height="1032" frameborder="0" marginheight="0" marginwidth="0">Loading Google Form…</iframe>
+
+## Topics for discussion
+
+- Datasets
+- Evaluation
+- High resolution transport
+- Lagrangian vs. Eulerian
+- Inverse modeling
+- Other trace gases
+- Neural Network methods
+
+<!-- ## Schedule
 
 - 14:00 - 9:15 / **Welcome and opening remarks** :raised_hands:
 
@@ -38,7 +51,7 @@ Yet, in contrast to NWP, which has ERA-5, there is currently no consensus on a g
 
 - 17:45 - 19:00 / **Closing Plenary Session** :wave:
 
-- 19:00 / **Social Dinner** :spaghetti:
+- 19:00 / **Social Dinner** :spaghetti: -->
 
 ## Organizing Committee
 
