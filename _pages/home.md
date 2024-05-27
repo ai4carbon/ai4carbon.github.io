@@ -29,7 +29,6 @@ Yet, in contrast to NWP, which has ERA-5, there is currently no consensus on a g
 <!-- Google embed ends -->
 </div>
 
-
 ## Topics for discussion
 
 - Datasets
