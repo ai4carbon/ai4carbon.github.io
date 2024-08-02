@@ -4,7 +4,7 @@ title: home
 permalink: /
 page_title: "AI4Carbon: Machine Learning meets Atmospheric Transport"
 page_subtitle: >
-  A virtual side event at <a href="https://www.icdc11.com/">ICDC 11</a>
+  A virtual workshop series
 news: true # includes a list of news items
 ---
 
