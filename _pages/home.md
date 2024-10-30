@@ -28,7 +28,7 @@ Four 15-minute presentations covering atmospheric transport models, inversion, a
 
 <div class="row row-cols-2 projects pt-3 pb-3">
   {% include people_horizontal.liquid name="Naveen Chandra" affiliation="JAMSTEC" url="https://www.researchgate.net/profile/Naveen-Chandra-2" img="assets/img/speakers/naveen_chandra.png" %}
-  {% include people_horizontal.liquid name="Daniel Varon" affiliation="MIT" url="https://www.varon.org/" img="assets/img/speakers/daniel_varon.png" %}
+  {% include people_horizontal.liquid name="Daniel Varon" affiliation="Harvard" url="https://www.varon.org/" img="assets/img/speakers/daniel_varon.png" %}
   {% include people_horizontal.liquid name="Fiona Lippert" affiliation="University of Amsterdam" url="https://www.linkedin.com/in/fiona-lippert-1179a3168/" img="assets/img/speakers/fiona_lippert.png" %}
   {% include people_horizontal.liquid name="Obin Sturm" affiliation="University of South California" url="https://www.linkedin.com/in/obin-sturm/" img="assets/img/speakers/obin_sturm.png" %}
 </div>
