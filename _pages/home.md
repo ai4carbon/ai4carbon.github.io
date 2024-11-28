@@ -8,6 +8,12 @@ page_subtitle: >
 news: true # includes a list of news items
 ---
 
+## AI4Carbon Mailing list
+
+<form action="https://mail.bgc-jena.mpg.de/mailman/subscribe/ai4carbon" method="POST"> E-mail: <input name="email" /><input type="submit" value="Sign Me Up!" /> </form>
+
+Further details [here](https://mail.bgc-jena.mpg.de/mailman/listinfo/ai4carbon).
+
 ## 1st Virtual Workshop
 
 We are excited to invite you to the first virtual AI4Carbon Workshop: Machine Learning Meets Atmospheric Transport for Carbon Cycle Research.
@@ -16,7 +22,6 @@ We are excited to invite you to the first virtual AI4Carbon Workshop: Machine Le
 
 > Duration: ~2 hours (Start at 5pm CET / 4pm GMT / 11am EST / 8am PST / 11pm ICT) 
 
-> Zoom: [Link to Zoom room](https://ethz.zoom.us/j/61493157373)
 
 ### Workshop Structure
 
@@ -50,16 +55,16 @@ In light of these constraints, an alternative proposition emerges, advocating fo
 
 Yet, in contrast to NWP, which has ERA-5, there is currently no consensus on a good training dataset for atmospheric transport of carbon dioxide. The **AI4Carbon workshop series** is a community effort aiming to alleviate this bottleneck and build a benchmark dataset as well as a thorough evaluation framework. Since the endeavor is broad, it requires collaboration from the experienced transport and inverse modeling community as well as machine learning researchers. Together we can achieve AI-based CO2 transport, thereby supporting the Global Greenhouse Gas Watch (G3W) of WMO.
 
-## Call for Interest
+<!-- ## Call for Interest -->
 
-<style>
-.responsive-wrap iframe{ max-width: 100%;}
-</style>
-<div class="responsive-wrap">
+<!-- <style>  -->
+<!-- .responsive-wrap iframe{ max-width: 100%;}  -->
+<!-- </style> -->
+<!-- <div class="responsive-wrap"> -->
 <!-- this is the embed code provided by Google -->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKQbUhrKQLhcrZGWb_mi350rhTWzjOpMYXgnjaTKrrigQqwQ/viewform?embedded=true" width="640" height="1032" frameborder="0" marginheight="0" marginwidth="0">Loading Google Form…</iframe>
+<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKQbUhrKQLhcrZGWb_mi350rhTWzjOpMYXgnjaTKrrigQqwQ/viewform?embedded=true" width="640" height="1032" frameborder="0" marginheight="0" marginwidth="0">Loading Google Form…</iframe> -->
 <!-- Google embed ends -->
-</div>
+<!-- </div> -->
 
 ## Topics for discussion
 
