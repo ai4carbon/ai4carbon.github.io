@@ -169,6 +169,8 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+  datasets:
+    output: true
 
 announcements:
   enabled: true

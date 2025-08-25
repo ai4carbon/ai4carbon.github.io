@@ -6,20 +6,28 @@ title: resources
 
 # Datasets
 <div class="datasets">
-  {% assign sorted_datasets = site.datasets | sort: "importance" %}
+  {% if site.datasets %}
+    {% assign sorted_datasets = site.datasets | sort: "importance" %}
+  {% else %}
+    {% assign sorted_datasets = "" %}
+  {% endif %}
   {% if page.horizontal %}
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2">
-        {% for dataset in sorted_datasets %}
-          {% include projects_horizontal.liquid project=dataset %}
-        {% endfor %}
+        {% if sorted_datasets %}
+          {% for dataset in sorted_datasets %}
+            {% include projects.liquid project=dataset %}
+          {% endfor %}
+        {% endif %}
       </div>
     </div>
   {% else %}
     <div class="row row-cols-1 row-cols-md-3">
-      {% for dataset in sorted_datasets %}
-        {% include projects.liquid project=dataset %}
-      {% endfor %}
+      {% if sorted_datasets %}
+        {% for dataset in sorted_datasets %}
+          {% include projects.liquid project=dataset %}
+        {% endfor %}
+      {% endif %}
     </div>
   {% endif %}
 </div>
