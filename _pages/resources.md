@@ -17,8 +17,8 @@ nav_order: 2
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2">
         {% if sorted_datasets %}
-          {% for dataset in sorted_datasets %}
-            {% include projects.liquid project=dataset %}
+          {% for project in sorted_datasets %}
+            {% include projects.liquid %}
           {% endfor %}
         {% endif %}
       </div>
@@ -26,8 +26,8 @@ nav_order: 2
   {% else %}
     <div class="row row-cols-1 row-cols-md-3">
       {% if sorted_datasets %}
-        {% for dataset in sorted_datasets %}
-          {% include projects.liquid project=dataset %}
+        {% for project in sorted_datasets %}
+          {% include projects.liquid %}
         {% endfor %}
       {% endif %}
     </div>

@@ -171,6 +171,7 @@ collections:
     permalink: /news/:path/
   datasets:
     output: true
+    permalink: /datasets/:path/
 
 announcements:
   enabled: true
