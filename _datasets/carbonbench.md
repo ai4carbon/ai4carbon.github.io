@@ -215,11 +215,13 @@ python data/create_obspack_dataset.py \
 ```
 @article{benson2024neuraltransport,
   title = {Atmospheric Transport Modeling of CO2 with Neural Networks},
-  author = {Vitus Benson, Ana Bastos, Christian Reimers, Alexander J. Winkler,
- Fanny Yang and Markus Reichstein},
-  eprint={2408.11032},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2408.11032}, 
+  author = {Benson, Vitus and Bastos, Ana and Reimers, Christian and Winkler, Alexander J. and Yang, Fanny and Reichstein, Markus},
+  year = {2025},
+  pages = {e2024MS004655},
+  journal = {Journal of Advances in Modeling Earth Systems},
+  volume = {17},
+  number = {2},
+  publisher = {Wiley Online Library},
+  url = {https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024MS004655},
 }
 ```
