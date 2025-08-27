@@ -5,11 +5,19 @@ description: Benchmark dataset for Eulerian atmospheric transport models
 img: assets/img/datasets/carbonbench_logo_small.png
 importance: 1
 ---
-
-![CarbonBench](/assets/img/datasets/carbonbench_logo.png)
-
-
-# CarbonBench Dataset
+<style>
+.page-header, .page-title, h1:first-of-type {
+  display: none;
+}
+</style>
+{%
+  include figure.liquid
+  loading="eager"
+  path="/assets/img/datasets/carbonbench_logo.png"
+  class="img-fluid rounded z-depth-1"
+  style="max-width: 400px; margin: 20px auto; display: block;"
+  alt="CarbonBench Logo"
+%}
 
 The **CarbonBench** dataset is a benchmark for machine learning emulators of atmospheric CO₂ tracer transport. It was introduced in  
 **Benson et al. (2024): [Atmospheric Transport Modeling of CO₂ with Neural Networks](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024MS004655)**.
