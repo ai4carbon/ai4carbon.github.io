@@ -146,6 +146,101 @@ The **CarbonBench** dataset is a benchmark for machine learning emulators of atm
 
 ---
 
+## HuggingFace Repository
+
+<div class="hf-card">
+  <div class="hf-header">
+    <i class="fa-brands fa-hugging-face"></i>
+    <a href="https://huggingface.co/datasets/vitusbenson/carbonbench" target="_blank">
+      <strong>vitusbenson/carbonbench</strong>
+    </a>
+  </div>
+  <div class="hf-description">
+    <p>Hosted dataset on Hugging Face with CarbonBench Zarr data and metadata for machine learning transport emulators.</p>
+  </div>
+  <div class="hf-stats">
+    <span class="stat">
+      <i class="fa-solid fa-heart"></i>
+      <span class="stat-text">Likes</span>
+    </span>
+    <span class="stat">
+      <i class="fa-solid fa-download"></i>
+      <span class="stat-text">Downloads</span>
+    </span>
+    <span class="stat">
+      <i class="fa-solid fa-database"></i>
+      <span class="stat-text">Dataset</span>
+    </span>
+  </div>
+  <div class="hf-links">
+    <a href="https://huggingface.co/datasets/vitusbenson/carbonbench" class="btn btn-outline-hf btn-sm" target="_blank">
+      <i class="fa-brands fa-hugging-face"></i> View on Hugging Face
+    </a>
+    <a href="https://huggingface.co/datasets/vitusbenson/carbonbench/tree/main" class="btn btn-outline-secondary btn-sm" target="_blank">
+      <i class="fa-solid fa-download"></i> Download
+    </a>
+  </div>
+</div>
+
+<style>
+.hf-card {
+  border: 1px solid #ffd1a3;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 20px 0;
+  background-color: #fffaf5;
+}
+
+.hf-header {
+  margin-bottom: 8px;
+}
+
+.hf-header i {
+  margin-right: 8px;
+  font-size: 1.2em;
+  color: #ff9d00;
+}
+
+.hf-header a {
+  text-decoration: none;
+  color: #ff7f00;
+}
+
+.hf-header a:hover {
+  text-decoration: underline;
+}
+
+.hf-description {
+  margin-bottom: 12px;
+  color: #5f6368;
+}
+
+.hf-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 0.9em;
+  color: #5f6368;
+}
+
+.hf-links {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-outline-hf {
+  color: #ff7f00;
+  border: 1px solid #ff9d00;
+  background-color: transparent;
+}
+
+.btn-outline-hf:hover {
+  background-color: #ff9d00;
+  color: white;
+}
+</style>
+
+
 ## Dataset Contents
 
 The dataset contains 3D CO₂ concentrations together with meteorological drivers and flux fields.  
