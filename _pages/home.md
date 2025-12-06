@@ -2,9 +2,9 @@
 layout: home
 title: home
 permalink: /
-page_title: "AI4Carbon: Machine Learning meets Atmospheric Transport"
+page_title: "AI4Carbon: Machine Learning for Carbon Cycle Science"
 page_subtitle: >
-  A virtual workshop series
+  A community effort
 news: true # includes a list of news items
 ---
 
