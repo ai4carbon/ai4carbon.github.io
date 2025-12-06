@@ -7,8 +7,7 @@ nav_order: 1
 ---
 
 
-## EGU 2026 [Machine learning and hybrid modelling for carbon cycle science, monitoring and carbon market policy
-](https://www.egu26.eu/session/57755)
+## EGU 2026 [Machine learning and hybrid modelling for carbon cycle science, monitoring and carbon market policy](https://www.egu26.eu/session/57755)
 
 We are excited to focus a session on the interplay of carbon cycle science, monitoring and carbon markets with machine learning at EGU 2026. While researchers repeatedly warn that current observation-based constraints on the global carbon cycle entail large uncertainties, a need for the quantification of carbon sinks motivated from policy and the carbon credit markets is increasingly answered by innovative solutions from industry. In this session, we aim to bring together the communities, to engage in a rigorous discussion on the current state of carbon cycle measurement and verification and what role machine learning can play.
 
