@@ -6,56 +6,296 @@ nav: true
 nav_order: 1
 ---
 
+<style>
+.workshop-intro {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(46, 204, 113, 0.1) 100%);
+  border-left: 5px solid var(--global-theme-color);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
 
-## EGU 2026 [Machine learning and hybrid modelling for carbon cycle science, monitoring and carbon market policy](https://www.egu26.eu/session/57755)
+.workshop-intro h2 {
+  margin-top: 0;
+  color: var(--global-theme-color);
+  font-size: 1.6rem;
+}
 
-We are excited to focus a session on the interplay of carbon cycle science, monitoring and carbon markets with machine learning at EGU 2026. While researchers repeatedly warn that current observation-based constraints on the global carbon cycle entail large uncertainties, a need for the quantification of carbon sinks motivated from policy and the carbon credit markets is increasingly answered by innovative solutions from industry. In this session, we aim to bring together the communities, to engage in a rigorous discussion on the current state of carbon cycle measurement and verification and what role machine learning can play.
+.event-card {
+  background: var(--global-card-bg-color);
+  border: 2px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
 
-We are particularly excited to have [Christian Igel](https://di.ku.dk/english/staff/vip/researchers_ml/?pure=en/persons/400547) from the University of Copenhagen as a keynote speaker. He is a distinguished machine learning expert and has been involved in major efforts to map the worlds forest tree height and biomass from remote sensing data.
+.event-card:hover {
+  border-color: var(--global-theme-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
 
+.event-card h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: var(--global-theme-color);
+  border-bottom: 3px solid var(--global-theme-color);
+  padding-bottom: 0.5rem;
+}
 
+.event-card h3 {
+  color: var(--global-text-color);
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
 
-## EGU 2025 [Understanding feedbacks between greenhouse gas exchange processes and climate variability using in situ observations, remote sensing, and machine learning](https://meetingorganizer.copernicus.org/EGU25/session/53561)
+.badge {
+  display: inline-block;
+  background: var(--global-theme-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
 
-We are excited to co-host a session on greenhouse gas inversions, with conventional and machine learning approaches at EGU25. The session has a large number of high quality talks and poster presentations, and including a keynote talk by Abhishek Chatterjee from NASA JPL on the OCO-2 and OCO-3 progress.
+.event-details {
+  background: rgba(0, 0, 0, 0.02);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--global-theme-color);
+}
 
-## 1st Virtual Workshop
+.event-details strong {
+  color: var(--global-theme-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
-We are excited to invite you to the first virtual AI4Carbon Workshop: Machine Learning Meets Atmospheric Transport for Carbon Cycle Research.
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
 
-> Date & Time: November 7th, 2024 
+.speaker-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
 
-> Duration: ~2 hours (Start at 5pm CET / 4pm GMT / 11am EST / 8am PST / 11pm ICT) 
+.speaker-card:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
+}
 
+.speaker-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--global-theme-color);
+}
 
-### Workshop Structure
+.speaker-card h4 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
 
-Hour 1: Presentations
+.speaker-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--global-text-color);
+  opacity: 0.8;
+}
 
-Four 15-minute presentations covering atmospheric transport models, inversion, and main challenges.
+.action-button {
+  display: inline-block;
+  background: var(--global-theme-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
 
-### Speakers
+.action-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  text-decoration: none;
+}
 
-<div class="row row-cols-2 projects pt-3 pb-3">
-  {% include people_horizontal.liquid name="Naveen Chandra" affiliation="JAMSTEC" url="https://www.researchgate.net/profile/Naveen-Chandra-2" img="assets/img/speakers/naveen_chandra.png" %}
-  {% include people_horizontal.liquid name="Daniel Varon" affiliation="Harvard" url="https://www.varon.org/" img="assets/img/speakers/daniel_varon.png" %}
-  {% include people_horizontal.liquid name="Fiona Lippert" affiliation="University of Amsterdam" url="https://www.linkedin.com/in/fiona-lippert-1179a3168/" img="assets/img/speakers/fiona_lippert.png" %}
-  {% include people_horizontal.liquid name="Obin Sturm" affiliation="University of South California" url="https://www.linkedin.com/in/obin-sturm/" img="assets/img/speakers/obin_sturm.png" %}
+.topics-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.topic-item {
+  background: rgba(0, 0, 0, 0.02);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--global-theme-color);
+  font-weight: 500;
+}
+</style>
+
+## Upcoming Workshops & Sessions
+
+<div class="workshop-intro">
+<h2>🚀 Connecting AI & Carbon Science</h2>
+The AI4Carbon Initiative fosters cutting-edge discussions on machine learning applications in carbon cycle research. Our workshops bring together leading researchers, industry experts, and emerging talents to tackle critical challenges in atmospheric transport modeling, carbon monitoring, and verification.
 </div>
 
-Hour 2: Discussion Session
+---
 
-We will discuss current challenges in atmospheric tracer transport modeling and inversion, and explore how recent advances in AI/ML can facilitate carbon cycle research, including transport model development, data assimilation, and uncertainty quantification.
-NOTE: We invite all participants to share their perspectives on transport models and inversion methods through a brief pre-workshop survey. Your valuable insights will help guide our discussion and highlight critical areas for development in the field.
-> [Link to the AI4Carbon Survey](https://forms.gle/QXJyXt31RmSN5ZY66)
+<div class="event-card">
+<h2>🌍 EGU 2026 – Vienna, Austria</h2>
 
+<div class="badge">Conference</div>
+<div class="badge">May 5-9, 2026</div>
 
-## Topics for discussion
+### Main Session: Machine Learning & Carbon Cycle Science
 
-- Datasets
-- Evaluation
-- High resolution transport
-- Lagrangian vs. Eulerian
-- Inverse modeling
-- Other trace gases
-- Neural Network methods
+We are hosting a comprehensive session on the interplay of carbon cycle science, monitoring, and carbon markets with machine learning at EGU 2026. Researchers warn that current observation-based constraints on the global carbon cycle entail large uncertainties. Meanwhile, policy-driven needs for carbon sink quantification are increasingly addressed by innovative industry solutions. This session brings together diverse communities for rigorous discussion on measuring and verifying carbon cycles.
+
+**Keynote Speaker:** [Christian Igel](https://di.ku.dk/english/staff/vip/researchers_ml/?pure=en/persons/400547), University of Copenhagen – A distinguished ML expert who has led major initiatives on mapping global forest tree height and biomass from remote sensing data.
+
+<div class="event-details">
+  <strong>📅 Session Date & Time:</strong> Thursday (to be confirmed)<br>
+  <strong>🔗 Full Details:</strong> <a href="https://www.egu26.eu/session/57755" target="_blank">Machine learning and hybrid modelling for carbon cycle science, monitoring and carbon market policy</a><br>
+  <a href="https://www.egu26.eu/session/57755" class="action-button">View Session</a>
+</div>
+
+---
+
+### Splinter Meeting: AI4Carbon Inverse Modeling
+
+An exclusive by-invitation-only splinter meeting to explore potential future work on AI for atmospheric transport and inverse modeling.
+
+<div class="event-details">
+  <strong>📍 Session ID:</strong> SPM74 – AI4Carbon<br>
+  <strong>📅 Date & Time:</strong> Tuesday, 5 May, 16:15–18:00 CEST<br>
+  <strong>🏢 Location:</strong> Room 2.43<br>
+  <strong>👥 Format:</strong> Short presentations + discussion/round table<br>
+  <strong>📋 Organizers:</strong> Vitus Benson | Co-organizer: Elena Fillola<br>
+  <em>Short presentations covering atmospheric transport models, inverse modeling challenges, and the role of AI/ML in advancing this field.</em>
+</div>
+
+<a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=MH_ksn3NTkql2rGM8aQVG6NS2BTHxQ5KhDhZYneGWhdUQk45QkVHUFA3Mlg2NEs3WTVROUtIU0lONi4u&route=shorturl" class="action-button">📝 Submit Expression of Interest</a>
+
+</div>
+
+<div class="event-card">
+<h2>📊 EGU 2025 – Vienna, Austria</h2>
+
+<div class="badge">Conference</div>
+<div class="badge">April 27 - May 2, 2025</div>
+
+### Greenhouse Gas Inversions & Machine Learning
+
+We co-hosted a session on greenhouse gas inversions using both conventional and machine learning approaches. The session featured high-quality presentations and posters, including a keynote talk by **Abhishek Chatterjee** (NASA JPL) on OCO-2 and OCO-3 progress in satellite-based carbon monitoring.
+
+<div class="event-details">
+  <strong>🎯 Focus Areas:</strong> Atmospheric transport, inversion algorithms, data assimilation, uncertainty quantification<br>
+  <strong>🔗 Session:</strong> <a href="https://meetingorganizer.copernicus.org/EGU25/session/53561" target="_blank">Understanding feedbacks between greenhouse gas exchange processes and climate variability</a>
+</div>
+
+</div>
+
+<div class="event-card">
+<h2>💻 1st Virtual Workshop</h2>
+
+<div class="badge">Workshop</div>
+<div class="badge">November 7, 2024</div>
+
+### Machine Learning Meets Atmospheric Transport
+
+Our inaugural virtual AI4Carbon workshop brought together researchers and practitioners for in-depth discussions on applying machine learning to atmospheric transport modeling and carbon cycle research.
+
+<div class="event-details">
+  <strong>📅 Date & Time:</strong> November 7th, 2024<br>
+  <strong>⏱️ Duration:</strong> ~2 hours<br>
+  <strong>🕐 Global Times:</strong> 5pm CET / 4pm GMT / 11am EST / 8am PST / 11pm ICT
+</div>
+
+#### Workshop Format
+
+**Hour 1: Expert Presentations**
+Four 15-minute presentations covering atmospheric transport models, inversion techniques, and current research challenges.
+
+#### Featured Speakers
+
+<div class="speakers-grid">
+  <div class="speaker-card">
+    <img src="assets/img/speakers/naveen_chandra.png" alt="Naveen Chandra">
+    <h4>Naveen Chandra</h4>
+    <p><strong>JAMSTEC</strong></p>
+    <a href="https://www.researchgate.net/profile/Naveen-Chandra-2" target="_blank">Profile</a>
+  </div>
+  
+  <div class="speaker-card">
+    <img src="assets/img/speakers/daniel_varon.png" alt="Daniel Varon">
+    <h4>Daniel Varon</h4>
+    <p><strong>Harvard University</strong></p>
+    <a href="https://www.varon.org/" target="_blank">Website</a>
+  </div>
+  
+  <div class="speaker-card">
+    <img src="assets/img/speakers/fiona_lippert.png" alt="Fiona Lippert">
+    <h4>Fiona Lippert</h4>
+    <p><strong>University of Amsterdam</strong></p>
+    <a href="https://www.linkedin.com/in/fiona-lippert-1179a3168/" target="_blank">LinkedIn</a>
+  </div>
+  
+  <div class="speaker-card">
+    <img src="assets/img/speakers/obin_sturm.png" alt="Obin Sturm">
+    <h4>Obin Sturm</h4>
+    <p><strong>University of Southern California</strong></p>
+    <a href="https://www.linkedin.com/in/obin-sturm/" target="_blank">LinkedIn</a>
+  </div>
+</div>
+
+**Hour 2: Interactive Discussion**
+
+We discussed current challenges in atmospheric tracer transport modeling and inversion, and explored how recent advances in AI/ML can facilitate carbon cycle research, including:
+- Transport model development and optimization
+- Data assimilation techniques
+- Uncertainty quantification
+- Integration of neural network methods
+
+#### Discussion Topics
+
+<div class="topics-list">
+  <div class="topic-item">📊 Datasets</div>
+  <div class="topic-item">✅ Evaluation Methods</div>
+  <div class="topic-item">🔬 High Resolution Transport Models</div>
+  <div class="topic-item">🌪️ Lagrangian vs. Eulerian Approaches</div>
+  <div class="topic-item">🔄 Inverse Modeling</div>
+  <div class="topic-item">🌨️ Trace Gas Studies</div>
+  <div class="topic-item">🧠 Neural Network Methods</div>
+</div>
+
+#### Pre-Workshop Survey
+
+We invited all participants to share perspectives on transport models and inversion methods through a comprehensive survey. Your insights help guide our research priorities and identify critical areas for collaborative development.
+
+<a href="https://forms.gle/QXJyXt31RmSN5ZY66" class="action-button">📋 View the AI4Carbon Survey</a>
+
+</div>
