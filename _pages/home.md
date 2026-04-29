@@ -275,6 +275,19 @@ news: true # includes a list of news items
 
 ---
 
+## Stay Connected
+
+<div class="mailing-list-form">
+<h3>📧 Join Our Mailing List</h3>
+<form action="https://mail.bgc-jena.mpg.de/mailman/subscribe/ai4carbon" method="POST">
+  <input type="email" name="email" placeholder="your@email.com" required>
+  <input type="submit" value="Subscribe">
+</form>
+<p style="font-size: 0.9rem; margin-top: 1rem;"><a href="https://mail.bgc-jena.mpg.de/mailman/listinfo/ai4carbon">View list details →</a></p>
+</div>
+
+---
+
 ## The Challenge
 
 <p>Artificial intelligence has revolutionized weather prediction and other scientific domains. Yet the carbon cycle—critical for understanding climate and supporting climate policy—remains largely untouched by these AI advances. AI4Carbon works to close this gap by leveraging machine learning across both atmospheric-based (top-down) and ecosystem-based (bottom-up) approaches to carbon science.</p>
@@ -312,7 +325,7 @@ news: true # includes a list of news items
 
   <div class="objective-item">
     <h4>🔗 Foster Community</h4>
-    <p>Connect researchers in atmospheric transport, inverse modeling, and machine learning through workshops and collaborative projects.</p>
+    <p>Connect researchers across top-down atmospheric science, bottom-up ecosystem modeling, and machine learning through workshops and collaborative projects.</p>
   </div>
 
   <div class="objective-item">
@@ -324,19 +337,6 @@ news: true # includes a list of news items
     <h4>🌐 Enable Action</h4>
     <p>Provide tools and techniques that support policy-relevant carbon accounting and the Global Greenhouse Gas Watch.</p>
   </div>
-</div>
-
----
-
-## Stay Connected
-
-<div class="mailing-list-form">
-<h3>📧 Join Our Mailing List</h3>
-<form action="https://mail.bgc-jena.mpg.de/mailman/subscribe/ai4carbon" method="POST">
-  <input type="email" name="email" placeholder="your@email.com" required>
-  <input type="submit" value="Subscribe">
-</form>
-<p style="font-size: 0.9rem; margin-top: 1rem;"><a href="https://mail.bgc-jena.mpg.de/mailman/listinfo/ai4carbon">View list details →</a></p>
 </div>
 
 ---

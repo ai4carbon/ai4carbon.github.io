@@ -39,7 +39,8 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  {% assign entry_keywords = entry.keywords | default: entry.keyword | downcase %}
+  <div id="{{entry.key}}" data-tags="{{ entry_keywords | escape }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -153,6 +154,16 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+
+    {% if entry_keywords and entry_keywords != '' %}
+      <div class="pub-tags-inline">
+        {% assign keyword_list = entry_keywords | split: ',' %}
+        {% for keyword in keyword_list %}
+          {% assign keyword_slug = keyword | strip %}
+          <span class="pub-category pub-{{ keyword_slug }}">{{ keyword_slug | replace: '-', ' ' | capitalize }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">

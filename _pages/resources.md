@@ -210,6 +210,41 @@ nav_order: 2
 .pub-review {
   background: #16a085; /* Dark turquoise */
 }
+
+.pub-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.pub-filter-btn {
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.pub-filter-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.pub-filter-btn.active {
+  outline: 2px solid var(--global-text-color);
+  outline-offset: 1px;
+}
+
+.pub-all {
+  background: #7f8c8d;
+}
+
+.publications li.is-hidden {
+  display: none;
+}
+
+.pub-tags-inline {
+  margin: 0.5rem 0 0.75rem 0;
+}
 </style>
 
 <div class="resources-intro">
@@ -229,7 +264,7 @@ nav_order: 2
     {% for dataset in sorted_datasets %}
     <div class="dataset-card">
       {% if dataset.img %}
-        <img src="/{{ dataset.img }}" alt="{{ dataset.title }}">
+        <img src="{{ dataset.img | prepend: '/' | relative_url }}" alt="{{ dataset.title }}">
       {% endif %}
       <h3>{{ dataset.title }}</h3>
       <p><strong>{{ dataset.description }}</strong></p>
@@ -248,15 +283,16 @@ nav_order: 2
 
 <p>Recent and seminal publications on machine learning for carbon cycle science, atmospheric transport modeling, and inverse modeling techniques. Publications are tagged by topic:</p>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.5rem; margin-bottom: 2rem;">
-  <div><span class="pub-category pub-machine-learning">Machine Learning</span></div>
-  <div><span class="pub-category pub-transport">Atmospheric Transport</span></div>
-  <div><span class="pub-category pub-inversion">Inversion</span></div>
-  <div><span class="pub-category pub-ecosystem">Ecosystem</span></div>
-  <div><span class="pub-category pub-monitoring">Monitoring</span></div>
-  <div><span class="pub-category pub-benchmark">Benchmark</span></div>
-  <div><span class="pub-category pub-methods">Methods</span></div>
-  <div><span class="pub-category pub-review">Review</span></div>
+<div class="pub-filter-bar" aria-label="Filter publications by category">
+  <button type="button" class="pub-category pub-all pub-filter-btn active" data-filter="all">All</button>
+  <button type="button" class="pub-category pub-machine-learning pub-filter-btn" data-filter="machine-learning">Machine Learning</button>
+  <button type="button" class="pub-category pub-transport pub-filter-btn" data-filter="transport">Atmospheric Transport</button>
+  <button type="button" class="pub-category pub-inversion pub-filter-btn" data-filter="inversion">Inversion</button>
+  <button type="button" class="pub-category pub-ecosystem pub-filter-btn" data-filter="ecosystem">Ecosystem</button>
+  <button type="button" class="pub-category pub-monitoring pub-filter-btn" data-filter="monitoring">Monitoring</button>
+  <button type="button" class="pub-category pub-benchmark pub-filter-btn" data-filter="benchmark">Benchmark</button>
+  <button type="button" class="pub-category pub-methods pub-filter-btn" data-filter="methods">Methods</button>
+  <button type="button" class="pub-category pub-review pub-filter-btn" data-filter="review">Review</button>
 </div>
 
 <div class="bibliography-section">
@@ -281,3 +317,44 @@ nav_order: 2
 <h4>💻 Join the Community</h4>
 <p>Subscribe to our <a href="https://mail.bgc-jena.mpg.de/mailman/listinfo/ai4carbon">mailing list</a> to stay updated on new datasets, publications, and community initiatives.</p>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = Array.from(document.querySelectorAll(".pub-filter-btn"));
+  const publicationItems = Array.from(document.querySelectorAll(".publications li"));
+
+  if (!buttons.length || !publicationItems.length) return;
+
+  const getTagsForItem = (item) => {
+    const tagHolder = item.querySelector("[data-tags]");
+    if (!tagHolder) return [];
+    const rawTags = (tagHolder.getAttribute("data-tags") || "").toLowerCase();
+    if (!rawTags.trim()) return [];
+    return rawTags.split(",").map((t) => t.trim()).filter(Boolean);
+  };
+
+  const applyFilter = (selectedFilter) => {
+    publicationItems.forEach((item) => {
+      if (selectedFilter === "all") {
+        item.classList.remove("is-hidden");
+        return;
+      }
+      const tags = getTagsForItem(item);
+      const show = tags.includes(selectedFilter);
+      item.classList.toggle("is-hidden", !show);
+    });
+
+    buttons.forEach((btn) => {
+      const isActive = btn.getAttribute("data-filter") === selectedFilter;
+      btn.classList.toggle("active", isActive);
+    });
+  };
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.getAttribute("data-filter") || "all";
+      applyFilter(filter);
+    });
+  });
+});
+</script>
