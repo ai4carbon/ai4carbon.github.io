@@ -314,6 +314,11 @@ nav_order: 2
 </div>
 
 <div class="resource-item">
+<h4>🌐 Virtual Institute for Carbon and Climate (VICC)</h4>
+<p>The Schmidt Sciences Virtual Institute for Carbon and Climate supports interdisciplinary research and collaboration to advance understanding of the carbon-climate system. <a href="https://www.schmidtsciences.org/vicc/" target="_blank">Learn more →</a></p>
+</div>
+
+<div class="resource-item">
 <h4>💻 Join the Community</h4>
 <p>Subscribe to our <a href="https://mail.bgc-jena.mpg.de/mailman/listinfo/ai4carbon">mailing list</a> to stay updated on new datasets, publications, and community initiatives.</p>
 </div>
