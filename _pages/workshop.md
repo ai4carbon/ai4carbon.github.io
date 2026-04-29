@@ -171,11 +171,11 @@ The AI4Carbon Initiative fosters cutting-edge discussions on machine learning ap
 <div class="badge">Conference</div>
 <div class="badge">May 5-9, 2026</div>
 
-### Main Session: Machine Learning & Carbon Cycle Science
+<h3>Main Session: Machine Learning & Carbon Cycle Science</h3>
 
-We are hosting a comprehensive session on the interplay of carbon cycle science, monitoring, and carbon markets with machine learning at EGU 2026. Researchers warn that current observation-based constraints on the global carbon cycle entail large uncertainties. Meanwhile, policy-driven needs for carbon sink quantification are increasingly addressed by innovative industry solutions. This session brings together diverse communities for rigorous discussion on measuring and verifying carbon cycles.
+<p>We are hosting a comprehensive session on the interplay of carbon cycle science, monitoring, and carbon markets with machine learning at EGU 2026. Researchers warn that current observation-based constraints on the global carbon cycle entail large uncertainties. Meanwhile, policy-driven needs for carbon sink quantification are increasingly addressed by innovative industry solutions. This session brings together diverse communities for rigorous discussion on measuring and verifying carbon cycles.</p>
 
-**Keynote Speaker:** [Christian Igel](https://di.ku.dk/english/staff/vip/researchers_ml/?pure=en/persons/400547), University of Copenhagen – A distinguished ML expert who has led major initiatives on mapping global forest tree height and biomass from remote sensing data.
+<p><strong>Keynote Speaker:</strong> <a href="https://di.ku.dk/english/staff/vip/researchers_ml/?pure=en/persons/400547" target="_blank">Christian Igel</a>, University of Copenhagen – A distinguished ML expert who has led major initiatives on mapping global forest tree height and biomass from remote sensing data.</p>
 
 <div class="event-details">
   <strong>📅 Session Date & Time:</strong> Thursday (to be confirmed)<br>
@@ -183,11 +183,11 @@ We are hosting a comprehensive session on the interplay of carbon cycle science,
   <a href="https://www.egu26.eu/session/57755" class="action-button">View Session</a>
 </div>
 
----
+<hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--global-divider-color);">
 
-### Splinter Meeting: AI4Carbon Inverse Modeling
+<h3>Splinter Meeting: AI4Carbon Inverse Modeling</h3>
 
-An exclusive by-invitation-only splinter meeting to explore potential future work on AI for atmospheric transport and inverse modeling.
+<p>An exclusive by-invitation-only splinter meeting to explore potential future work on AI for atmospheric transport and inverse modeling.</p>
 
 <div class="event-details">
   <strong>📍 Session ID:</strong> SPM74 – AI4Carbon<br>
@@ -208,9 +208,9 @@ An exclusive by-invitation-only splinter meeting to explore potential future wor
 <div class="badge">Conference</div>
 <div class="badge">April 27 - May 2, 2025</div>
 
-### Greenhouse Gas Inversions & Machine Learning
+<h3>Greenhouse Gas Inversions & Machine Learning</h3>
 
-We co-hosted a session on greenhouse gas inversions using both conventional and machine learning approaches. The session featured high-quality presentations and posters, including a keynote talk by **Abhishek Chatterjee** (NASA JPL) on OCO-2 and OCO-3 progress in satellite-based carbon monitoring.
+<p>We co-hosted a session on greenhouse gas inversions using both conventional and machine learning approaches. The session featured high-quality presentations and posters, including a keynote talk by <strong>Abhishek Chatterjee</strong> (NASA JPL) on OCO-2 and OCO-3 progress in satellite-based carbon monitoring.</p>
 
 <div class="event-details">
   <strong>🎯 Focus Areas:</strong> Atmospheric transport, inversion algorithms, data assimilation, uncertainty quantification<br>
@@ -225,9 +225,9 @@ We co-hosted a session on greenhouse gas inversions using both conventional and 
 <div class="badge">Workshop</div>
 <div class="badge">November 7, 2024</div>
 
-### Machine Learning Meets Atmospheric Transport
+<h3>Machine Learning Meets Atmospheric Transport</h3>
 
-Our inaugural virtual AI4Carbon workshop brought together researchers and practitioners for in-depth discussions on applying machine learning to atmospheric transport modeling and carbon cycle research.
+<p>Our inaugural virtual AI4Carbon workshop brought together researchers and practitioners for in-depth discussions on applying machine learning to atmospheric transport modeling and carbon cycle research.</p>
 
 <div class="event-details">
   <strong>📅 Date & Time:</strong> November 7th, 2024<br>
@@ -235,52 +235,55 @@ Our inaugural virtual AI4Carbon workshop brought together researchers and practi
   <strong>🕐 Global Times:</strong> 5pm CET / 4pm GMT / 11am EST / 8am PST / 11pm ICT
 </div>
 
-#### Workshop Format
+<h4 style="margin-top: 1.5rem;">Workshop Format</h4>
 
-**Hour 1: Expert Presentations**
-Four 15-minute presentations covering atmospheric transport models, inversion techniques, and current research challenges.
+<p><strong>Hour 1: Expert Presentations</strong><br>
+Four 15-minute presentations covering atmospheric transport models, inversion techniques, and current research challenges.</p>
 
-#### Featured Speakers
+<h4>Featured Speakers</h4>
 
 <div class="speakers-grid">
   <div class="speaker-card">
-    <img src="assets/img/speakers/naveen_chandra.png" alt="Naveen Chandra">
+    <img src="/assets/img/speakers/naveen_chandra.png" alt="Naveen Chandra">
     <h4>Naveen Chandra</h4>
     <p><strong>JAMSTEC</strong></p>
     <a href="https://www.researchgate.net/profile/Naveen-Chandra-2" target="_blank">Profile</a>
   </div>
   
   <div class="speaker-card">
-    <img src="assets/img/speakers/daniel_varon.png" alt="Daniel Varon">
+    <img src="/assets/img/speakers/daniel_varon.png" alt="Daniel Varon">
     <h4>Daniel Varon</h4>
     <p><strong>Harvard University</strong></p>
     <a href="https://www.varon.org/" target="_blank">Website</a>
   </div>
   
   <div class="speaker-card">
-    <img src="assets/img/speakers/fiona_lippert.png" alt="Fiona Lippert">
+    <img src="/assets/img/speakers/fiona_lippert.png" alt="Fiona Lippert">
     <h4>Fiona Lippert</h4>
     <p><strong>University of Amsterdam</strong></p>
     <a href="https://www.linkedin.com/in/fiona-lippert-1179a3168/" target="_blank">LinkedIn</a>
   </div>
   
   <div class="speaker-card">
-    <img src="assets/img/speakers/obin_sturm.png" alt="Obin Sturm">
+    <img src="/assets/img/speakers/obin_sturm.png" alt="Obin Sturm">
     <h4>Obin Sturm</h4>
     <p><strong>University of Southern California</strong></p>
     <a href="https://www.linkedin.com/in/obin-sturm/" target="_blank">LinkedIn</a>
   </div>
 </div>
 
-**Hour 2: Interactive Discussion**
+<p style="margin-top: 1.5rem;"><strong>Hour 2: Interactive Discussion</strong></p>
 
-We discussed current challenges in atmospheric tracer transport modeling and inversion, and explored how recent advances in AI/ML can facilitate carbon cycle research, including:
-- Transport model development and optimization
-- Data assimilation techniques
-- Uncertainty quantification
-- Integration of neural network methods
+<p>We discussed current challenges in atmospheric tracer transport modeling and inversion, and explored how recent advances in AI/ML can facilitate carbon cycle research, including:</p>
 
-#### Discussion Topics
+<ul>
+  <li>Transport model development and optimization</li>
+  <li>Data assimilation techniques</li>
+  <li>Uncertainty quantification</li>
+  <li>Integration of neural network methods</li>
+</ul>
+
+<h4>Discussion Topics</h4>
 
 <div class="topics-list">
   <div class="topic-item">📊 Datasets</div>
@@ -292,10 +295,12 @@ We discussed current challenges in atmospheric tracer transport modeling and inv
   <div class="topic-item">🧠 Neural Network Methods</div>
 </div>
 
-#### Pre-Workshop Survey
+<h4>Pre-Workshop Survey</h4>
 
-We invited all participants to share perspectives on transport models and inversion methods through a comprehensive survey. Your insights help guide our research priorities and identify critical areas for collaborative development.
+<p>We invited all participants to share perspectives on transport models and inversion methods through a comprehensive survey. Your insights help guide our research priorities and identify critical areas for collaborative development.</p>
 
 <a href="https://forms.gle/QXJyXt31RmSN5ZY66" class="action-button">📋 View the AI4Carbon Survey</a>
+
+</div>
 
 </div>

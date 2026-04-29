@@ -8,21 +8,291 @@ page_subtitle: >
 news: true # includes a list of news items
 ---
 
-## AI4Carbon Mailing list
+<style>
+.home-intro {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.15) 0%, rgba(46, 204, 113, 0.15) 100%);
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
 
-<form action="https://mail.bgc-jena.mpg.de/mailman/subscribe/ai4carbon" method="POST"> E-mail: <input name="email" /><input type="submit" value="Sign Me Up!" /> </form>
+.home-intro h2 {
+  color: var(--global-theme-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-Further details [here](https://mail.bgc-jena.mpg.de/mailman/listinfo/ai4carbon).
+.home-intro p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--global-text-color);
+}
 
-## Aims and scope
+.challenge-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
 
-Recent advances in artificial intelligence (AI) have enabled a step-change in Medium-Range Numerical Weather Prediction skill. The large deep neural networks GraphCast and PanguWeather, trained to emulate the climate reanalysis dataset ERA-5, outperform the state-of-the-art HRES forecast at ECMWF, with significant margin.
+.challenge-card {
+  background: var(--global-card-bg-color);
+  border: 2px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
 
-Conversely, in the realm of inverse modeling of the Carbon Cycle — a process integral to deducing surface fluxes from atmospheric concentrations — challenges persist due to the employment of relatively coarse-resolution transport models. These models are hindered by inherent transport errors, attributed to limitations such as imprecise sub-grid-scale parameterizations and numerical discrepancies spawned by partial differential equation (PDE) solvers operating at diminished resolutions. The conventional approach of enhancing model fidelity through increased resolution in inverse modeling is hampered by prohibitive computational demands.
+.challenge-card:hover {
+  border-color: var(--global-theme-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
 
-In light of these constraints, an alternative proposition emerges, advocating for the strategic application of AI to ameliorate model accuracy even at lower resolutions. This innovative approach could entail the training of machine learning architectures using outputs from high-resolution transport models or direct emulation of the inverse procedure. Through this training process, the AI-model is envisioned to acquire the capability to autonomously identify and rectify the erroneous parameterizations and numerical inaccuracies inherent in lower-resolution models, thereby offering a promising avenue to circumvent computational limitations while elevating model resolution and accuracy.
+.challenge-card h3 {
+  color: var(--global-theme-color);
+  margin-top: 0;
+  font-size: 1.4rem;
+}
 
-Yet, in contrast to NWP, which has ERA-5, there is currently no consensus on a good training dataset for atmospheric transport of carbon dioxide. The **AI4Carbon workshop series** is a community effort aiming to alleviate this bottleneck and build a benchmark dataset as well as a thorough evaluation framework. Since the endeavor is broad, it requires collaboration from the experienced transport and inverse modeling community as well as machine learning researchers. Together we can achieve AI-based CO2 transport, thereby supporting the Global Greenhouse Gas Watch (G3W) of WMO.
+.challenge-card p {
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.highlight-box {
+  background: rgba(52, 152, 219, 0.1);
+  border-left: 5px solid var(--global-theme-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.highlight-box strong {
+  color: var(--global-theme-color);
+}
+
+.initiative-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.initiative-header h2 {
+  color: var(--global-theme-color);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--global-theme-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  margin: 1rem 1rem 0 0;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.cta-secondary {
+  background: transparent;
+  border: 2px solid var(--global-theme-color);
+  color: var(--global-theme-color);
+}
+
+.cta-secondary:hover {
+  background: var(--global-theme-color);
+  color: white;
+}
+
+.mailing-list-form {
+  background: var(--global-card-bg-color);
+  border: 2px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 2rem 0;
+}
+
+.mailing-list-form h3 {
+  color: var(--global-theme-color);
+  margin-top: 0;
+}
+
+.mailing-list-form form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.mailing-list-form input[type="email"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.mailing-list-form input[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  background: var(--global-theme-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mailing-list-form input[type="submit"]:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--global-theme-color);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--global-text-color);
+  margin-top: 0.5rem;
+}
+
+.objectives-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.objective-item {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.02);
+  border-left: 4px solid var(--global-theme-color);
+  border-radius: 8px;
+}
+
+.objective-item h4 {
+  color: var(--global-theme-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.objective-item p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+</style>
+
+<div class="home-intro">
+<h2>🌍 Advancing AI for Carbon Cycle Science</h2>
+<p>The AI4Carbon Initiative is a community-driven effort to leverage cutting-edge machine learning for carbon cycle research, atmospheric transport modeling, and climate monitoring.</p>
+</div>
+
+---
+
+## The Challenge
+
+<p>Recent breakthroughs in artificial intelligence have transformed numerical weather prediction, with deep learning models like GraphCast and PanguWeather now outperforming operational forecasting systems. However, the carbon cycle—critical for understanding climate and supporting climate policy—remains largely untouched by these AI advances.</p>
+
+<div class="challenge-section">
+  <div class="challenge-card">
+    <h3>🔬 The Transport Problem</h3>
+    <p>Inverse modeling of the carbon cycle relies on atmospheric transport models operating at coarse resolutions, leading to systematic errors in retrieving surface carbon fluxes. Higher resolution models existing in research are computationally prohibitive for operational inverse modeling.</p>
+  </div>
+
+  <div class="challenge-card">
+    <h3>📊 The Data Gap</h3>
+    <p>Unlike weather prediction, there is no consensus benchmark dataset for training machine learning models on atmospheric CO₂ transport. This lack of standardization hinders progress and collaboration across the research community.</p>
+  </div>
+
+  <div class="challenge-card">
+    <h3>🤝 The Opportunity</h3>
+    <p>Machine learning can bridge the gap: trained on high-resolution model outputs, neural networks could learn to correct transport errors and accelerate inversions—supporting the WMO Global Greenhouse Gas Watch (G3W).</p>
+  </div>
+</div>
+
+<div class="highlight-box">
+💡 <strong>Our Vision:</strong> By bringing together the atmospheric transport modeling, inverse modeling, and machine learning communities, we can build AI-based CO₂ transport models that are operational, accurate, and trustworthy.
+</div>
+
+---
+
+## Our Mission
+
+<div class="objectives-list">
+  <div class="objective-item">
+    <h4>📈 Build Consensus</h4>
+    <p>Establish benchmark datasets and evaluation frameworks for AI in carbon cycle research.</p>
+  </div>
+
+  <div class="objective-item">
+    <h4>🔗 Foster Community</h4>
+    <p>Connect researchers in atmospheric transport, inverse modeling, and machine learning through workshops and collaborative projects.</p>
+  </div>
+
+  <div class="objective-item">
+    <h4>🎯 Drive Impact</h4>
+    <p>Develop and validate AI methods that improve carbon flux estimates and support climate monitoring.</p>
+  </div>
+
+  <div class="objective-item">
+    <h4>🌐 Enable Action</h4>
+    <p>Provide tools and techniques that support policy-relevant carbon accounting and the Global Greenhouse Gas Watch.</p>
+  </div>
+</div>
+
+---
+
+## Stay Connected
+
+<div class="mailing-list-form">
+<h3>📧 Join Our Mailing List</h3>
+<form action="https://mail.bgc-jena.mpg.de/mailman/subscribe/ai4carbon" method="POST">
+  <input type="email" name="email" placeholder="your@email.com" required>
+  <input type="submit" value="Subscribe">
+</form>
+<p style="font-size: 0.9rem; margin-top: 1rem;"><a href="https://mail.bgc-jena.mpg.de/mailman/listinfo/ai4carbon">View list details →</a></p>
+</div>
+
+---
+
+## Upcoming Events
+
+<p>Join us at upcoming workshops and conferences to learn more about AI for carbon cycle science:</p>
+
+<a href="/workshops/" class="cta-button">📅 View All Workshops</a>
+<a href="/resources/" class="cta-button cta-secondary">📚 Explore Resources</a>
 
 <!-- ## Call for Interest -->
 
