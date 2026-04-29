@@ -212,23 +212,77 @@ news: true # includes a list of news items
   margin: 0;
   font-size: 0.95rem;
 }
+
+.person-card {
+  background: var(--global-card-bg-color);
+  border: 2px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-card:hover {
+  border-color: var(--global-theme-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.person-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--global-theme-color);
+  margin-bottom: 1rem;
+}
+
+.person-card h4 {
+  color: var(--global-theme-color);
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.person-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: var(--global-text-color);
+}
+
+.person-card a {
+  margin-top: 0.75rem;
+  display: inline-block;
+  color: var(--global-theme-color);
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
 </style>
 
 <div class="home-intro">
 <h2>🌍 Advancing AI for Carbon Cycle Science</h2>
-<p>The AI4Carbon Initiative is a community-driven effort to leverage cutting-edge machine learning for carbon cycle research, atmospheric transport modeling, and climate monitoring.</p>
+<p>The AI4Carbon Initiative is a community-driven effort to leverage cutting-edge machine learning for understanding and monitoring carbon cycles. We bridge top-down atmospheric inversion approaches with bottom-up ecosystem modeling through AI, advancing both atmospheric transport science and carbon accounting.</p>
 </div>
 
 ---
 
 ## The Challenge
 
-<p>Recent breakthroughs in artificial intelligence have transformed numerical weather prediction, with deep learning models like GraphCast and PanguWeather now outperforming operational forecasting systems. However, the carbon cycle—critical for understanding climate and supporting climate policy—remains largely untouched by these AI advances.</p>
+<p>Artificial intelligence has revolutionized weather prediction and other scientific domains. Yet the carbon cycle—critical for understanding climate and supporting climate policy—remains largely untouched by these AI advances. AI4Carbon works to close this gap by leveraging machine learning across both atmospheric-based (top-down) and ecosystem-based (bottom-up) approaches to carbon science.</p>
 
 <div class="challenge-section">
   <div class="challenge-card">
-    <h3>🔬 The Transport Problem</h3>
-    <p>Inverse modeling of the carbon cycle relies on atmospheric transport models operating at coarse resolutions, leading to systematic errors in retrieving surface carbon fluxes. Higher resolution models existing in research are computationally prohibitive for operational inverse modeling.</p>
+    <h3>🔬 The Top-Down Challenge</h3>
+    <p>Atmospheric inverse modeling relies on coarse-resolution transport models, leading to systematic errors in retrieving surface carbon fluxes. Higher-resolution models exist in research but are computationally prohibitive for operational use.</p>
   </div>
 
   <div class="challenge-card">
@@ -237,13 +291,13 @@ news: true # includes a list of news items
   </div>
 
   <div class="challenge-card">
-    <h3>🤝 The Opportunity</h3>
-    <p>Machine learning can bridge the gap: trained on high-resolution model outputs, neural networks could learn to correct transport errors and accelerate inversions—supporting the WMO Global Greenhouse Gas Watch (G3W).</p>
+    <h3>🤝 The Bottom-Up Complement</h3>
+    <p>Ecosystem models and direct measurements provide valuable constraints, but integrating them with atmospheric observations remains challenging. AI can help unify these perspectives by learning patterns across scales and bridging gaps between different data sources.</p>
   </div>
 </div>
 
 <div class="highlight-box">
-💡 <strong>Our Vision:</strong> By bringing together the atmospheric transport modeling, inverse modeling, and machine learning communities, we can build AI-based CO₂ transport models that are operational, accurate, and trustworthy.
+💡 <strong>Our Vision:</strong> By bringing together atmospheric scientists, ecosystem modelers, machine learning researchers, and policy makers, we can develop AI methods that unify top-down and bottom-up carbon cycle understanding—creating a new era of AI-assisted carbon science.
 </div>
 
 ---
@@ -294,61 +348,106 @@ news: true # includes a list of news items
 <a href="/workshops/" class="cta-button">📅 View All Workshops</a>
 <a href="/resources/" class="cta-button cta-secondary">📚 Explore Resources</a>
 
-<!-- ## Call for Interest -->
-
-<!-- <style>  -->
-<!-- .responsive-wrap iframe{ max-width: 100%;}  -->
-<!-- </style> -->
-<!-- <div class="responsive-wrap"> -->
-<!-- this is the embed code provided by Google -->
-<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKQbUhrKQLhcrZGWb_mi350rhTWzjOpMYXgnjaTKrrigQqwQ/viewform?embedded=true" width="640" height="1032" frameborder="0" marginheight="0" marginwidth="0">Loading Google Form…</iframe> -->
-<!-- Google embed ends -->
-<!-- </div> -->
-
-<!-- ## Schedule
-
-- 14:00 - 9:15 / **Welcome and opening remarks** :raised_hands:
-
-- 14:15 - 14:45 / <strong>Invited Talk</strong> <b><i>AI for Science</i></b>, TBA
-- 14:45 - 15:15 / <strong>Invited Talk</strong> <b><i>Atmospheric Transport</i></b>, TBA
-- 15:15 - 15:35 / <strong>Lightning Talk</strong> <b><i>AI for Carbon</i></b>, TBA
-- 15:35 - 15:55 / <strong>Lightning Talk</strong> <b><i>AI for Carbon</i></b>, TBA
-
-- 15:55 - 16:15 / **Coffee break** :coffee:
-
-- 16:15 - 17:45 / <strong><u>Breakout Groups:</u> Towards a Community Effort on AI for Atmospheric Transport</strong> :mega:
-
-  - Datasets
-  - Evaluation
-  - Methods
-
-- 17:45 - 19:00 / **Closing Plenary Session** :wave:
-
-- 19:00 / **Social Dinner** :spaghetti: -->
+---
 
 ## Organizing Committee
 
-<div class="row row-cols-2 projects pt-3 pb-3">
-  {% include people_horizontal.liquid name="Vitus Benson" affiliation="Max Planck Institute for Biogeochemistry" url="https://vitusbenson.github.io/" img="assets/img/organizers/vitus_benson.png" %}
-  {% include people_horizontal.liquid name="Nikhil Dadheech" affiliation="University of Washington" url="https://nd349.github.io/" img="assets/img/organizers/nikhil_dadheech.png" %}
-  {% include people_horizontal.liquid name="Elena Fillola" affiliation="University of Bristol" url="https://research-information.bris.ac.uk/en/persons/elena-fillola-mayoral" img="assets/img/organizers/elena_fillola.png" %}
-  {% include people_horizontal.liquid name="Tai-Long He" affiliation="University of Washington" url="https://tailonghe.github.io/" img="assets/img/organizers/tailong_he.png" %}
-  {% include people_horizontal.liquid name="Yuming Jin" affiliation="NCAR" url="https://www.linkedin.com/in/yuming-jin-306a7b126" img="assets/img/organizers/yuming_jin.png" %}
-  {% include people_horizontal.liquid name="Sam Upton" affiliation="Max Planck Institute for Biogeochemistry" url="https://www.bgc-jena.mpg.de/person/supton/4955530" img="assets/img/organizers/sam_upton.png" %}
+<div class="people-grid">
+  <div class="person-card">
+    <img src="/assets/img/organizers/vitus_benson.png" alt="Vitus Benson">
+    <h4>Vitus Benson</h4>
+    <p><strong>Max Planck Institute for Biogeochemistry</strong></p>
+    <a href="https://vitusbenson.github.io/" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/nikhil_dadheech.png" alt="Nikhil Dadheech">
+    <h4>Nikhil Dadheech</h4>
+    <p><strong>University of Washington</strong></p>
+    <a href="https://nd349.github.io/" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/elena_fillola.png" alt="Elena Fillola">
+    <h4>Elena Fillola</h4>
+    <p><strong>University of Bristol</strong></p>
+    <a href="https://research-information.bris.ac.uk/en/persons/elena-fillola-mayoral" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/tailong_he.png" alt="Tai-Long He">
+    <h4>Tai-Long He</h4>
+    <p><strong>University of Washington</strong></p>
+    <a href="https://tailonghe.github.io/" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/yuming_jin.png" alt="Yuming Jin">
+    <h4>Yuming Jin</h4>
+    <p><strong>NCAR</strong></p>
+    <a href="https://www.linkedin.com/in/yuming-jin-306a7b126" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/sam_upton.png" alt="Sam Upton">
+    <h4>Sam Upton</h4>
+    <p><strong>Max Planck Institute for Biogeochemistry</strong></p>
+    <a href="https://www.bgc-jena.mpg.de/person/supton/4955530" target="_blank">Profile →</a>
+  </div>
 </div>
 
 ## Advisory Board
 
-<div class="row row-cols-2 projects pt-3 pb-3">
-  {% include people_horizontal.liquid name="Anna Agusti-Panareda" affiliation="ECMWF & CAMS" url="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/anna-agusti-panareda" img="assets/img/organizers/anna_agustipanareda.png" %}
-  {% include people_horizontal.liquid name="Gianpaolo Balsamo" affiliation="Global Greenhouse Gas Watch (G3W) & WMO" url="https://wmo.int/profile/gianpaolo-balsamo" img="assets/img/organizers/gianpaolo_balsamo.png" %}
-  {% include people_horizontal.liquid name="Ana Bastos" affiliation="Leipzig University" url="https://www.bgc-jena.mpg.de/person/abastos/4680491" img="assets/img/organizers/ana_bastos.png" %}
-  {% include people_horizontal.liquid name="Frédéric Chevallier" affiliation="LSCE & CAMS" url="https://www.lsce.ipsl.fr/Phocea/Pisp/index.php?nom=frederic.chevallier" img="assets/img/organizers/frederic_chevallier.png" %}
-  {% include people_horizontal.liquid name="Anna Michalak" affiliation="Carnegie" url="https://bse.carnegiescience.edu/dr-anna-michalak-0" img="assets/img/organizers/anna_michalak.png" %}
-  {% include people_horizontal.liquid name="Wouter Peters" affiliation="Wageningen University" url="https://www.wur.nl/en/persons/wouter-peters.htm" img="assets/img/organizers/wouter_peters.png" %}
-  {% include people_horizontal.liquid name="Markus Reichstein" affiliation="Max Planck Institute for Biogeochemistry" url="https://www.bgc-jena.mpg.de/en/reichstein.html" img="assets/img/organizers/markus_reichstein.png" %}
-  {% include people_horizontal.liquid name="Britt Stephens" affiliation="NCAR" url="https://staff.ucar.edu/users/stephens" img="assets/img/organizers/britt_stephens.png" %}
-  {% include people_horizontal.liquid name="Alex Turner" affiliation="University of Washington" url="https://alexjturner.github.io/index.html" img="assets/img/organizers/alex_turner.png" %}
+<div class="people-grid">
+  <div class="person-card">
+    <img src="/assets/img/organizers/anna_agustipanareda.png" alt="Anna Agusti-Panareda">
+    <h4>Anna Agusti-Panareda</h4>
+    <p><strong>ECMWF & CAMS</strong></p>
+    <a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/anna-agusti-panareda" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/gianpaolo_balsamo.png" alt="Gianpaolo Balsamo">
+    <h4>Gianpaolo Balsamo</h4>
+    <p><strong>Global Greenhouse Gas Watch (G3W) & WMO</strong></p>
+    <a href="https://wmo.int/profile/gianpaolo-balsamo" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/ana_bastos.png" alt="Ana Bastos">
+    <h4>Ana Bastos</h4>
+    <p><strong>Leipzig University</strong></p>
+    <a href="https://www.bgc-jena.mpg.de/person/abastos/4680491" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/frederic_chevallier.png" alt="Frédéric Chevallier">
+    <h4>Frédéric Chevallier</h4>
+    <p><strong>LSCE & CAMS</strong></p>
+    <a href="https://www.lsce.ipsl.fr/Phocea/Pisp/index.php?nom=frederic.chevallier" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/anna_michalak.png" alt="Anna Michalak">
+    <h4>Anna Michalak</h4>
+    <p><strong>Carnegie</strong></p>
+    <a href="https://bse.carnegiescience.edu/dr-anna-michalak-0" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/wouter_peters.png" alt="Wouter Peters">
+    <h4>Wouter Peters</h4>
+    <p><strong>Wageningen University</strong></p>
+    <a href="https://www.wur.nl/en/persons/wouter-peters.htm" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/markus_reichstein.png" alt="Markus Reichstein">
+    <h4>Markus Reichstein</h4>
+    <p><strong>Max Planck Institute for Biogeochemistry</strong></p>
+    <a href="https://www.bgc-jena.mpg.de/en/reichstein.html" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/britt_stephens.png" alt="Britt Stephens">
+    <h4>Britt Stephens</h4>
+    <p><strong>NCAR</strong></p>
+    <a href="https://staff.ucar.edu/users/stephens" target="_blank">Profile →</a>
+  </div>
+  <div class="person-card">
+    <img src="/assets/img/organizers/alex_turner.png" alt="Alex Turner">
+    <h4>Alex Turner</h4>
+    <p><strong>University of Washington</strong></p>
+    <a href="https://alexjturner.github.io/index.html" target="_blank">Profile →</a>
+  </div>
 </div>
 
 ## Contact

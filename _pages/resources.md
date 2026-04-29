@@ -147,6 +147,69 @@ nav_order: 2
   margin: 0;
   font-size: 0.95rem;
 }
+
+/* Bibliography category tags */
+.publications {
+  position: relative;
+}
+
+.publications li {
+  padding-left: 1rem;
+  list-style-position: inside;
+}
+
+.publications li::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.pub-category {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-machine-learning {
+  background: #3498db; /* Blue */
+}
+
+.pub-transport {
+  background: #e74c3c; /* Red */
+}
+
+.pub-inversion {
+  background: #9b59b6; /* Purple */
+}
+
+.pub-ecosystem {
+  background: #27ae60; /* Green */
+}
+
+.pub-monitoring {
+  background: #f39c12; /* Orange */
+}
+
+.pub-benchmark {
+  background: #1abc9c; /* Turquoise */
+}
+
+.pub-methods {
+  background: #34495e; /* Dark gray */
+}
+
+.pub-review {
+  background: #16a085; /* Dark turquoise */
+}
 </style>
 
 <div class="resources-intro">
@@ -166,7 +229,7 @@ nav_order: 2
     {% for dataset in sorted_datasets %}
     <div class="dataset-card">
       {% if dataset.img %}
-        <img src="{{ dataset.img }}" alt="{{ dataset.title }}">
+        <img src="/{{ dataset.img }}" alt="{{ dataset.title }}">
       {% endif %}
       <h3>{{ dataset.title }}</h3>
       <p><strong>{{ dataset.description }}</strong></p>
@@ -183,7 +246,18 @@ nav_order: 2
 
 <h2 class="section-header">📚 Publications</h2>
 
-<p>Recent and seminal publications on machine learning for carbon cycle science, atmospheric transport modeling, and inverse modeling techniques.</p>
+<p>Recent and seminal publications on machine learning for carbon cycle science, atmospheric transport modeling, and inverse modeling techniques. Publications are tagged by topic:</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.5rem; margin-bottom: 2rem;">
+  <div><span class="pub-category pub-machine-learning">Machine Learning</span></div>
+  <div><span class="pub-category pub-transport">Atmospheric Transport</span></div>
+  <div><span class="pub-category pub-inversion">Inversion</span></div>
+  <div><span class="pub-category pub-ecosystem">Ecosystem</span></div>
+  <div><span class="pub-category pub-monitoring">Monitoring</span></div>
+  <div><span class="pub-category pub-benchmark">Benchmark</span></div>
+  <div><span class="pub-category pub-methods">Methods</span></div>
+  <div><span class="pub-category pub-review">Review</span></div>
+</div>
 
 <div class="bibliography-section">
 <div class="bib-note">
@@ -201,11 +275,6 @@ nav_order: 2
 <div class="resource-item">
 <h4>📖 Global Greenhouse Gas Watch (G3W)</h4>
 <p>WMO initiative to establish a comprehensive, integrated and user-focused global system for monitoring greenhouse gases and supporting climate action. <a href="https://public.wmo.int/en/our-mandate/climate/global-greenhouse-gas-watch" target="_blank">Learn more →</a></p>
-</div>
-
-<div class="resource-item">
-<h4>🌐 GraphCast & PanguWeather</h4>
-<p>Next-generation AI models for weather prediction that have inspired similar approaches in carbon cycle research. These demonstrate the potential of deep learning for atmospheric sciences.</p>
 </div>
 
 <div class="resource-item">
