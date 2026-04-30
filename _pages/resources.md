@@ -310,12 +310,12 @@ nav_order: 2
 
 <div class="resource-item">
 <h4>📖 Global Greenhouse Gas Watch (G3W)</h4>
-<p>WMO initiative to establish a comprehensive, integrated and user-focused global system for monitoring greenhouse gases and supporting climate action. <a href="https://public.wmo.int/en/our-mandate/climate/global-greenhouse-gas-watch" target="_blank">Learn more →</a></p>
+<p>WMO initiative to establish a comprehensive, integrated and user-focused global system for monitoring greenhouse gases and supporting climate action. <a href="https://g3w.wmo.int/site/global-greenhouse-gas-watch-g3w" target="_blank">Learn more →</a></p>
 </div>
 
 <div class="resource-item">
-<h4>🌐 Virtual Institute for Carbon and Climate (VICC)</h4>
-<p>The Schmidt Sciences Virtual Institute for Carbon and Climate supports interdisciplinary research and collaboration to advance understanding of the carbon-climate system. <a href="https://www.schmidtsciences.org/vicc/" target="_blank">Learn more →</a></p>
+<h4>🌐 Virtual Institute for the Carbon Cycle (VICC)</h4>
+<p>The Schmidt Sciences Virtual Institute for the Carbon Cycle supports interdisciplinary research and collaboration to advance understanding of the global carbon cycle. <a href="https://www.schmidtsciences.org/vicc/" target="_blank">Learn more →</a></p>
 </div>
 
 <div class="resource-item">

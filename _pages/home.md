@@ -310,7 +310,7 @@ news: true # includes a list of news items
 </div>
 
 <div class="highlight-box">
-💡 <strong>Our Vision:</strong> By bringing together atmospheric scientists, ecosystem modelers, machine learning researchers, and policy makers, we can develop AI methods that unify top-down and bottom-up carbon cycle understanding—creating a new era of AI-assisted carbon science.
+💡 <strong>Our Vision:</strong> By bringing together atmospheric scientists, ecosystem modelers, machine learning researchers, and policy makers, we are exploring how AI methods could help unify top-down and bottom-up carbon cycle understanding, reducing uncertainties in our estimates of the global carbon cycle.
 </div>
 
 ---
