@@ -434,11 +434,6 @@ news: true # includes a list of news items
     <span class="member-aff">MPI for Biogeochemistry</span>
   </div>
   <div class="member">
-    <img src="/assets/img/speakers/michael_bertolacci.png" alt="Michael Bertolacci">
-    <span class="member-name"><a href="https://mbertolacci.github.io/" target="_blank">Michael Bertolacci</a></span>
-    <span class="member-aff">University of Wollongong</span>
-  </div>
-  <div class="member">
     <img src="/assets/img/speakers/naveen_chandra.png" alt="Naveen Chandra">
     <span class="member-name"><a href="https://www.researchgate.net/profile/Naveen-Chandra-2" target="_blank">Naveen Chandra</a></span>
     <span class="member-aff">JAMSTEC</span>
@@ -449,9 +444,9 @@ news: true # includes a list of news items
     <span class="member-aff">LSCE & CAMS</span>
   </div>
   <div class="member">
-    <div class="initials">KC</div>
-    <span class="member-name"><a href="https://www.bgc-jena.mpg.de/person/137510/5356045" target="_blank">Kai-Hendrik Cohrs</a></span>
-    <span class="member-aff">MPI for Biogeochemistry</span>
+    <img src="/assets/img/organizers/kaihendrik_cohrs.png" alt="Kai-Hendrik Cohrs">
+    <span class="member-name"><a href="https://github.com/KaiHCohrs" target="_blank">Kai-Hendrik Cohrs</a></span>
+    <span class="member-aff">University of Valencia</span>
   </div>
   <div class="member">
     <img src="/assets/img/organizers/nikhil_dadheech.png" alt="Nikhil Dadheech">
@@ -464,19 +459,9 @@ news: true # includes a list of news items
     <span class="member-aff">University of Bristol</span>
   </div>
   <div class="member">
-    <img src="/assets/img/speakers/christian_frankenberg.png" alt="Christian Frankenberg">
-    <span class="member-name"><a href="https://www.gps.caltech.edu/people/christian-frankenberg" target="_blank">Christian Frankenberg</a></span>
-    <span class="member-aff">Caltech</span>
-  </div>
-  <div class="member">
     <img src="/assets/img/organizers/tailong_he.png" alt="Tai-Long He">
     <span class="member-name"><a href="https://tailonghe.github.io/" target="_blank">Tai-Long He</a></span>
     <span class="member-aff">University of Washington</span>
-  </div>
-  <div class="member">
-    <div class="initials">TH</div>
-    <span class="member-name">Tim Hunter</span>
-    <span class="member-aff">Stanford University</span>
   </div>
   <div class="member">
     <img src="/assets/img/organizers/yuming_jin.png" alt="Yuming Jin">
@@ -504,19 +489,9 @@ news: true # includes a list of news items
     <span class="member-aff">MPI for Biogeochemistry</span>
   </div>
   <div class="member">
-    <img src="/assets/img/speakers/matt_rigby.png" alt="Matt Rigby">
-    <span class="member-name"><a href="https://www.bristol.ac.uk/person/Matthew-Rigby-582d62b3-99e9-44ca-8353-927860796902/" target="_blank">Matt Rigby</a></span>
-    <span class="member-aff">University of Bristol</span>
-  </div>
-  <div class="member">
-    <div class="initials">CR</div>
-    <span class="member-name"><a href="https://www.cmcc.it/people/carlos-rodriguez-pardo" target="_blank">Carlos Rodriguez-Pardo</a></span>
+    <img src="/assets/img/organizers/carlos_rodriguezpardo.png" alt="Carlos Rodriguez-Pardo">
+    <span class="member-name"><a href="https://carlosrodriguezpardo.es/" target="_blank">Carlos Rodriguez-Pardo</a></span>
     <span class="member-aff">Politecnico di Milano & CMCC</span>
-  </div>
-  <div class="member">
-    <div class="initials">AS</div>
-    <span class="member-name"><a href="https://www.cira.colostate.edu/staff/schuh-andrew/" target="_blank">Andrew Schuh</a></span>
-    <span class="member-aff">CIRA, Colorado State University</span>
   </div>
   <div class="member">
     <img src="/assets/img/organizers/britt_stephens.png" alt="Britt Stephens">
@@ -529,8 +504,8 @@ news: true # includes a list of news items
     <span class="member-aff">University of Southern California</span>
   </div>
   <div class="member">
-    <div class="initials">KT</div>
-    <span class="member-name"><a href="https://uk.linkedin.com/in/tokarska" target="_blank">Kasia Tokarska de los Santos</a></span>
+    <img src="/assets/img/organizers/kasia_tokarska.png" alt="Kasia Tokarska de los Santos">
+    <span class="member-name"><a href="https://kasiatokarska.com/" target="_blank">Kasia Tokarska de los Santos</a></span>
     <span class="member-aff"></span>
   </div>
   <div class="member">

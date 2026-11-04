@@ -114,6 +114,14 @@ nav_order: 1
   font-size: 1.1rem;
 }
 
+.speaker-card .talk-topic {
+  color: var(--global-theme-color);
+  font-weight: bold;
+  font-style: italic;
+  opacity: 1;
+  margin-bottom: 0.35rem;
+}
+
 .speaker-card p {
   margin: 0;
   font-size: 0.9rem;
@@ -203,7 +211,7 @@ The AI4Carbon Initiative fosters cutting-edge discussions on machine learning ap
 
 <h3>The Next Generation of Atmospheric Transport Models?</h3>
 
-<p>Several groups are currently making atmospheric transport models faster, simpler or differentiable – from GPU and modern-language ports of existing codes, to machine learning emulators of Eulerian models and of Lagrangian footprints. This workshop brings these efforts together to compare approaches, find a common vocabulary, and discuss how next-generation transport models should be evaluated.</p>
+<p>Several groups are currently rewriting or streamlining atmospheric transport codes, many of them in modern, GPU-ready frameworks such as PyTorch, Julia or CuPy, exploiting recent advances in agentic AI. This workshop brings these efforts together to compare approaches, discuss how such codes should be evaluated, and ask the obvious question: <strong>are these just toys, or can they actually advance the field?</strong></p>
 
 <div class="event-details">
   <strong>📅 Date & Time:</strong> Thursday, November 19th, 2026<br>
@@ -218,36 +226,41 @@ The AI4Carbon Initiative fosters cutting-edge discussions on machine learning ap
   <div class="speaker-card">
     <img src="/assets/img/speakers/matt_rigby.png" alt="Matt Rigby">
     <h4>Matt Rigby</h4>
+    <p class="talk-topic">GLIDE (PyTorch)</p>
     <p><strong>University of Bristol</strong></p>
     <a href="https://www.bristol.ac.uk/person/Matthew-Rigby-582d62b3-99e9-44ca-8353-927860796902/" target="_blank">Profile</a>
   </div>
   <div class="speaker-card">
     <img src="/assets/img/speakers/christian_frankenberg.png" alt="Christian Frankenberg">
     <h4>Christian Frankenberg</h4>
+    <p class="talk-topic">AtmosTransport.jl (Julia)</p>
     <p><strong>Caltech</strong></p>
     <a href="https://www.gps.caltech.edu/people/christian-frankenberg" target="_blank">Profile</a>
   </div>
   <div class="speaker-card">
     <img src="/assets/img/speakers/michael_bertolacci.png" alt="Michael Bertolacci">
     <h4>Michael Bertolacci</h4>
+    <p class="talk-topic">WOMBAT Transport (NumPy/CuPy)</p>
     <p><strong>University of Wollongong</strong></p>
     <a href="https://mbertolacci.github.io/" target="_blank">Website</a>
   </div>
   <div class="speaker-card">
     <img src="/assets/img/organizers/frederic_chevallier.png" alt="Frédéric Chevallier">
     <h4>Frédéric Chevallier</h4>
+    <p class="talk-topic">OLGAT (Fortran)</p>
     <p><strong>LSCE</strong></p>
     <a href="https://www.lsce.ipsl.fr/Phocea/Pisp/index.php?nom=frederic.chevallier" target="_blank">Profile</a>
   </div>
   <div class="speaker-card">
     <img src="/assets/img/organizers/vitus_benson.png" alt="Vitus Benson">
     <h4>Vitus Benson</h4>
+    <p class="talk-topic">torchtransport (PyTorch)</p>
     <p><strong>MPI for Biogeochemistry</strong></p>
     <a href="https://vitusbenson.github.io/" target="_blank">Website</a>
   </div>
 </div>
 
-<p>Working on a related effort? Suggest a lightning talk in the registration form by <strong>November 12th</strong>.</p>
+<p>Working on a similar effort? Suggest a lightning talk in the registration form by <strong>November 12th</strong>.</p>
 
 <h4>Register</h4>
 

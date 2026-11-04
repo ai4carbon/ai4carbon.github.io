@@ -173,6 +173,9 @@ collections:
     output: true
     permalink: /datasets/:path/
 
+# show future-dated news (e.g. announcements dated on the event or deadline day)
+future: true
+
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
