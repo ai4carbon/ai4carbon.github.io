@@ -55,8 +55,11 @@ nav_order: 2
 }
 
 .dataset-card img {
+  width: 100%;
+  height: 150px;
   max-height: 150px;
   object-fit: contain;
+  background: #fff;
   margin-bottom: 1rem;
   border-radius: 8px;
 }
@@ -277,6 +280,7 @@ nav_order: 2
   {% endif %}
 
     <div class="dataset-card">
+      <img src="/assets/img/datasets/footnet.jpg" alt="FootNet">
       <h3>FootNet</h3>
       <p>Deep-learning emulator of Lagrangian (STILT) transport footprints for high-resolution greenhouse gas flux inversions.</p>
       <div class="badge">Transport Emulator</div>
@@ -287,6 +291,7 @@ nav_order: 2
     </div>
 
     <div class="dataset-card">
+      <img src="/assets/img/datasets/gates.jpg" alt="GATES">
       <h3>GATES</h3>
       <p>Graph-Neural-Network Atmospheric Transport Emulation System: a GNN emulator of LPDM (NAME) footprints for fast emissions inference from satellites.</p>
       <div class="badge">Transport Emulator</div>
@@ -298,6 +303,7 @@ nav_order: 2
 
 
     <div class="dataset-card">
+      <img src="/assets/img/datasets/fluxcom_x_base.jpg" alt="FLUXCOM-X-BASE">
       <h3>FLUXCOM-X-BASE</h3>
       <p>Global NEE, GPP and ET products (2001–2020) from the FLUXCOM-X machine-learning upscaling of eddy covariance fluxes.</p>
       <div class="badge">Flux Product</div>
@@ -308,6 +314,7 @@ nav_order: 2
     </div>
 
     <div class="dataset-card">
+      <img src="/assets/img/datasets/fluxtrapolation.jpg" alt="FLUXtrapolation">
       <h3>FLUXtrapolation</h3>
       <p>Benchmark for machine learning models that extrapolate ecosystem carbon, water and energy fluxes beyond FLUXNET towers, with temporal, spatial and temperature-based scenarios.</p>
       <div class="badge">Benchmark</div>
@@ -317,6 +324,7 @@ nav_order: 2
     </div>
 
     <div class="dataset-card">
+      <img src="/assets/img/datasets/starcop.jpg" alt="STARCOP">
       <h3>STARCOP</h3>
       <p>Hyperspectral methane plume segmentation dataset and models for point-source detection.</p>
       <div class="badge">Dataset</div>
@@ -350,7 +358,7 @@ nav_order: 2
 
 <div class="bibliography-section">
 <div class="bib-note">
-<strong>*</strong> indicates joint first authorship
+<strong>*</strong> indicates joint first authorship. Thumbnails show a figure from the paper where it is published under a Creative Commons licence, and generic topic artwork otherwise.
 </div>
 <div class="publications">
 {% bibliography %}
