@@ -266,6 +266,62 @@ news: true # includes a list of news items
   gap: 1.5rem;
   margin: 1.5rem 0;
 }
+
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.25rem 1rem;
+  margin: 1.5rem 0;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.member img,
+.member .initials {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--global-theme-color);
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.member:hover img,
+.member:hover .initials {
+  transform: scale(1.08);
+}
+
+.member .initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--global-theme-color);
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.member-name {
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.member-name a {
+  color: var(--global-theme-color);
+}
+
+.member-aff {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  line-height: 1.3;
+}
 </style>
 
 <div class="home-intro">
@@ -350,105 +406,151 @@ news: true # includes a list of news items
 
 ---
 
-## Organizing Committee
+## Community
 
-<div class="people-grid">
-  <div class="person-card">
-    <img src="/assets/img/organizers/vitus_benson.png" alt="Vitus Benson">
-    <h4>Vitus Benson</h4>
-    <p><strong>Max Planck Institute for Biogeochemistry</strong></p>
-    <a href="https://vitusbenson.github.io/" target="_blank">Profile →</a>
-  </div>
-  <div class="person-card">
-    <img src="/assets/img/organizers/nikhil_dadheech.png" alt="Nikhil Dadheech">
-    <h4>Nikhil Dadheech</h4>
-    <p><strong>University of Washington</strong></p>
-    <a href="https://nd349.github.io/" target="_blank">Profile →</a>
-  </div>
-  <div class="person-card">
-    <img src="/assets/img/organizers/elena_fillola.png" alt="Elena Fillola">
-    <h4>Elena Fillola</h4>
-    <p><strong>University of Bristol</strong></p>
-    <a href="https://research-information.bris.ac.uk/en/persons/elena-fillola-mayoral" target="_blank">Profile →</a>
-  </div>
-  <div class="person-card">
-    <img src="/assets/img/organizers/tailong_he.png" alt="Tai-Long He">
-    <h4>Tai-Long He</h4>
-    <p><strong>University of Washington</strong></p>
-    <a href="https://tailonghe.github.io/" target="_blank">Profile →</a>
-  </div>
-  <div class="person-card">
-    <img src="/assets/img/organizers/yuming_jin.png" alt="Yuming Jin">
-    <h4>Yuming Jin</h4>
-    <p><strong>NCAR</strong></p>
-    <a href="https://www.linkedin.com/in/yuming-jin-306a7b126" target="_blank">Profile →</a>
-  </div>
-  <div class="person-card">
-    <img src="/assets/img/organizers/sam_upton.png" alt="Sam Upton">
-    <h4>Sam Upton</h4>
-    <p><strong>Max Planck Institute for Biogeochemistry</strong></p>
-    <a href="https://www.bgc-jena.mpg.de/person/supton/4955530" target="_blank">Profile →</a>
-  </div>
-</div>
+<p>AI4Carbon is an open community, not a fixed committee. Each workshop, session or meeting is organized by whoever wants to drive it, and you can find the organizers of every event on the <a href="/workshops/">workshops page</a>. Want to organize something under the AI4Carbon umbrella, or give a talk? Just get in touch!</p>
 
-## Advisory Board
+<p>A big thank you to everyone who has organized, presented, advised or otherwise helped shape AI4Carbon since 2024:</p>
 
-<div class="people-grid">
-  <div class="person-card">
+<div class="community-grid">
+  <div class="member">
     <img src="/assets/img/organizers/anna_agustipanareda.png" alt="Anna Agusti-Panareda">
-    <h4>Anna Agusti-Panareda</h4>
-    <p><strong>ECMWF & CAMS</strong></p>
-    <a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/anna-agusti-panareda" target="_blank">Profile →</a>
+    <span class="member-name"><a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/anna-agusti-panareda" target="_blank">Anna Agusti-Panareda</a></span>
+    <span class="member-aff">ECMWF & CAMS</span>
   </div>
-  <div class="person-card">
+  <div class="member">
     <img src="/assets/img/organizers/gianpaolo_balsamo.png" alt="Gianpaolo Balsamo">
-    <h4>Gianpaolo Balsamo</h4>
-    <p><strong>Global Greenhouse Gas Watch (G3W) & WMO</strong></p>
-    <a href="https://wmo.int/profile/gianpaolo-balsamo" target="_blank">Profile →</a>
+    <span class="member-name"><a href="https://wmo.int/profile/gianpaolo-balsamo" target="_blank">Gianpaolo Balsamo</a></span>
+    <span class="member-aff">WMO & G3W</span>
   </div>
-  <div class="person-card">
+  <div class="member">
     <img src="/assets/img/organizers/ana_bastos.png" alt="Ana Bastos">
-    <h4>Ana Bastos</h4>
-    <p><strong>Leipzig University</strong></p>
-    <a href="https://www.bgc-jena.mpg.de/person/abastos/4680491" target="_blank">Profile →</a>
+    <span class="member-name"><a href="https://www.bgc-jena.mpg.de/person/abastos/4680491" target="_blank">Ana Bastos</a></span>
+    <span class="member-aff">Leipzig University</span>
   </div>
-  <div class="person-card">
+  <div class="member">
+    <img src="/assets/img/organizers/vitus_benson.png" alt="Vitus Benson">
+    <span class="member-name"><a href="https://vitusbenson.github.io/" target="_blank">Vitus Benson</a></span>
+    <span class="member-aff">MPI for Biogeochemistry</span>
+  </div>
+  <div class="member">
+    <img src="/assets/img/speakers/michael_bertolacci.png" alt="Michael Bertolacci">
+    <span class="member-name"><a href="https://mbertolacci.github.io/" target="_blank">Michael Bertolacci</a></span>
+    <span class="member-aff">University of Wollongong</span>
+  </div>
+  <div class="member">
+    <img src="/assets/img/speakers/naveen_chandra.png" alt="Naveen Chandra">
+    <span class="member-name"><a href="https://www.researchgate.net/profile/Naveen-Chandra-2" target="_blank">Naveen Chandra</a></span>
+    <span class="member-aff">JAMSTEC</span>
+  </div>
+  <div class="member">
     <img src="/assets/img/organizers/frederic_chevallier.png" alt="Frédéric Chevallier">
-    <h4>Frédéric Chevallier</h4>
-    <p><strong>LSCE & CAMS</strong></p>
-    <a href="https://www.lsce.ipsl.fr/Phocea/Pisp/index.php?nom=frederic.chevallier" target="_blank">Profile →</a>
+    <span class="member-name"><a href="https://www.lsce.ipsl.fr/Phocea/Pisp/index.php?nom=frederic.chevallier" target="_blank">Frédéric Chevallier</a></span>
+    <span class="member-aff">LSCE & CAMS</span>
   </div>
-  <div class="person-card">
+  <div class="member">
+    <div class="initials">KC</div>
+    <span class="member-name"><a href="https://www.bgc-jena.mpg.de/person/137510/5356045" target="_blank">Kai-Hendrik Cohrs</a></span>
+    <span class="member-aff">MPI for Biogeochemistry</span>
+  </div>
+  <div class="member">
+    <img src="/assets/img/organizers/nikhil_dadheech.png" alt="Nikhil Dadheech">
+    <span class="member-name"><a href="https://nd349.github.io/" target="_blank">Nikhil Dadheech</a></span>
+    <span class="member-aff">University of Washington</span>
+  </div>
+  <div class="member">
+    <img src="/assets/img/organizers/elena_fillola.png" alt="Elena Fillola">
+    <span class="member-name"><a href="https://research-information.bris.ac.uk/en/persons/elena-fillola-mayoral" target="_blank">Elena Fillola</a></span>
+    <span class="member-aff">University of Bristol</span>
+  </div>
+  <div class="member">
+    <img src="/assets/img/speakers/christian_frankenberg.png" alt="Christian Frankenberg">
+    <span class="member-name"><a href="https://www.gps.caltech.edu/people/christian-frankenberg" target="_blank">Christian Frankenberg</a></span>
+    <span class="member-aff">Caltech</span>
+  </div>
+  <div class="member">
+    <img src="/assets/img/organizers/tailong_he.png" alt="Tai-Long He">
+    <span class="member-name"><a href="https://tailonghe.github.io/" target="_blank">Tai-Long He</a></span>
+    <span class="member-aff">University of Washington</span>
+  </div>
+  <div class="member">
+    <div class="initials">TH</div>
+    <span class="member-name">Tim Hunter</span>
+    <span class="member-aff">Stanford University</span>
+  </div>
+  <div class="member">
+    <img src="/assets/img/organizers/yuming_jin.png" alt="Yuming Jin">
+    <span class="member-name"><a href="https://www.linkedin.com/in/yuming-jin-306a7b126" target="_blank">Yuming Jin</a></span>
+    <span class="member-aff">NCAR</span>
+  </div>
+  <div class="member">
+    <img src="/assets/img/speakers/fiona_lippert.png" alt="Fiona Lippert">
+    <span class="member-name"><a href="https://www.linkedin.com/in/fiona-lippert-1179a3168/" target="_blank">Fiona Lippert</a></span>
+    <span class="member-aff">University of Amsterdam</span>
+  </div>
+  <div class="member">
     <img src="/assets/img/organizers/anna_michalak.png" alt="Anna Michalak">
-    <h4>Anna Michalak</h4>
-    <p><strong>Carnegie</strong></p>
-    <a href="https://bse.carnegiescience.edu/dr-anna-michalak-0" target="_blank">Profile →</a>
+    <span class="member-name"><a href="https://bse.carnegiescience.edu/dr-anna-michalak-0" target="_blank">Anna Michalak</a></span>
+    <span class="member-aff">Carnegie</span>
   </div>
-  <div class="person-card">
+  <div class="member">
     <img src="/assets/img/organizers/wouter_peters.png" alt="Wouter Peters">
-    <h4>Wouter Peters</h4>
-    <p><strong>Wageningen University</strong></p>
-    <a href="https://www.wur.nl/en/persons/wouter-peters.htm" target="_blank">Profile →</a>
+    <span class="member-name"><a href="https://www.wur.nl/en/persons/profdr-w-wouter-peters" target="_blank">Wouter Peters</a></span>
+    <span class="member-aff">Wageningen University</span>
   </div>
-  <div class="person-card">
+  <div class="member">
     <img src="/assets/img/organizers/markus_reichstein.png" alt="Markus Reichstein">
-    <h4>Markus Reichstein</h4>
-    <p><strong>Max Planck Institute for Biogeochemistry</strong></p>
-    <a href="https://www.bgc-jena.mpg.de/en/reichstein.html" target="_blank">Profile →</a>
+    <span class="member-name"><a href="https://www.bgc-jena.mpg.de/en/reichstein.html" target="_blank">Markus Reichstein</a></span>
+    <span class="member-aff">MPI for Biogeochemistry</span>
   </div>
-  <div class="person-card">
+  <div class="member">
+    <img src="/assets/img/speakers/matt_rigby.png" alt="Matt Rigby">
+    <span class="member-name"><a href="https://www.bristol.ac.uk/person/Matthew-Rigby-582d62b3-99e9-44ca-8353-927860796902/" target="_blank">Matt Rigby</a></span>
+    <span class="member-aff">University of Bristol</span>
+  </div>
+  <div class="member">
+    <div class="initials">CR</div>
+    <span class="member-name"><a href="https://www.cmcc.it/people/carlos-rodriguez-pardo" target="_blank">Carlos Rodriguez-Pardo</a></span>
+    <span class="member-aff">Politecnico di Milano & CMCC</span>
+  </div>
+  <div class="member">
+    <div class="initials">AS</div>
+    <span class="member-name"><a href="https://www.cira.colostate.edu/staff/schuh-andrew/" target="_blank">Andrew Schuh</a></span>
+    <span class="member-aff">CIRA, Colorado State University</span>
+  </div>
+  <div class="member">
     <img src="/assets/img/organizers/britt_stephens.png" alt="Britt Stephens">
-    <h4>Britt Stephens</h4>
-    <p><strong>NCAR</strong></p>
-    <a href="https://staff.ucar.edu/users/stephens" target="_blank">Profile →</a>
+    <span class="member-name"><a href="https://cpaess.ucar.edu/cgc-host/dr-britton-stephens" target="_blank">Britt Stephens</a></span>
+    <span class="member-aff">NCAR</span>
   </div>
-  <div class="person-card">
+  <div class="member">
+    <img src="/assets/img/speakers/obin_sturm.png" alt="Obin Sturm">
+    <span class="member-name"><a href="https://www.linkedin.com/in/obin-sturm/" target="_blank">Obin Sturm</a></span>
+    <span class="member-aff">University of Southern California</span>
+  </div>
+  <div class="member">
+    <div class="initials">KT</div>
+    <span class="member-name"><a href="https://uk.linkedin.com/in/tokarska" target="_blank">Kasia Tokarska de los Santos</a></span>
+    <span class="member-aff"></span>
+  </div>
+  <div class="member">
     <img src="/assets/img/organizers/alex_turner.png" alt="Alex Turner">
-    <h4>Alex Turner</h4>
-    <p><strong>University of Washington</strong></p>
-    <a href="https://alexjturner.github.io/index.html" target="_blank">Profile →</a>
+    <span class="member-name"><a href="https://alexjturner.github.io/index.html" target="_blank">Alex Turner</a></span>
+    <span class="member-aff">University of Washington</span>
+  </div>
+  <div class="member">
+    <img src="/assets/img/organizers/sam_upton.png" alt="Sam Upton">
+    <span class="member-name"><a href="https://www.bgc-jena.mpg.de/person/supton/4955530" target="_blank">Sam Upton</a></span>
+    <span class="member-aff">MPI for Biogeochemistry</span>
+  </div>
+  <div class="member">
+    <img src="/assets/img/speakers/daniel_varon.png" alt="Daniel Varon">
+    <span class="member-name"><a href="https://www.varon.org/" target="_blank">Daniel Varon</a></span>
+    <span class="member-aff">Harvard University</span>
   </div>
 </div>
+
+<p style="font-size: 0.95rem; opacity: 0.8;">…and every participant in our workshops and sessions. Missing from this list? Let us know!</p>
 
 ## Contact
 
