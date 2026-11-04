@@ -254,9 +254,9 @@ nav_order: 2
 
 ---
 
-<h2 class="section-header">📊 Datasets & Benchmarks</h2>
+<h2 class="section-header">📊 Datasets, Models & Tools</h2>
 
-<p>Explore our collection of open-source datasets and benchmarks designed to accelerate machine learning research in atmospheric transport and carbon cycle modeling.</p>
+<p>Open datasets, benchmarks and ML models from the AI4Carbon community for atmospheric transport and carbon cycle research.</p>
 
 <div class="datasets-grid">
   {% if site.datasets %}
@@ -275,7 +275,60 @@ nav_order: 2
     </div>
     {% endfor %}
   {% endif %}
+
+    <div class="dataset-card">
+      <h3>FootNet</h3>
+      <p>Deep-learning emulator of Lagrangian (STILT) transport footprints for high-resolution greenhouse gas flux inversions.</p>
+      <div class="badge">Transport Emulator</div>
+      <div class="dataset-links">
+        <a href="https://doi.org/10.5194/gmd-18-1661-2025" target="_blank">Paper</a>
+        <a href="https://doi.org/10.5281/zenodo.12752655" target="_blank">Code</a>
+      </div>
+    </div>
+
+    <div class="dataset-card">
+      <h3>GATES</h3>
+      <p>Graph-Neural-Network Atmospheric Transport Emulation System: a GNN emulator of LPDM (NAME) footprints for fast emissions inference from satellites.</p>
+      <div class="badge">Transport Emulator</div>
+      <div class="dataset-links">
+        <a href="https://doi.org/10.5194/gmd-19-1893-2026" target="_blank">Paper</a>
+        <a href="https://github.com/elenafillo/GATES_LPDM_emulator" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+
+    <div class="dataset-card">
+      <h3>FLUXCOM-X-BASE</h3>
+      <p>Global NEE, GPP and ET products (2001–2020) from the FLUXCOM-X machine-learning upscaling of eddy covariance fluxes.</p>
+      <div class="badge">Flux Product</div>
+      <div class="dataset-links">
+        <a href="https://doi.org/10.5194/bg-21-5079-2024" target="_blank">Paper</a>
+        <a href="https://doi.org/10.18160/5NZG-JMJE" target="_blank">Data</a>
+      </div>
+    </div>
+
+    <div class="dataset-card">
+      <h3>FLUXtrapolation</h3>
+      <p>Benchmark for machine learning models that extrapolate ecosystem carbon, water and energy fluxes beyond FLUXNET towers, with temporal, spatial and temperature-based scenarios.</p>
+      <div class="badge">Benchmark</div>
+      <div class="dataset-links">
+        <a href="https://arxiv.org/abs/2605.19812" target="_blank">Paper</a>
+      </div>
+    </div>
+
+    <div class="dataset-card">
+      <h3>STARCOP</h3>
+      <p>Hyperspectral methane plume segmentation dataset and models for point-source detection.</p>
+      <div class="badge">Dataset</div>
+      <div class="dataset-links">
+        <a href="https://zenodo.org/records/7863343" target="_blank">Data</a>
+        <a href="https://github.com/spaceml-org/STARCOP" target="_blank">GitHub</a>
+      </div>
+    </div>
+
 </div>
+
+<p style="font-size: 0.95rem; opacity: 0.8;">Know another open model, dataset or tool that belongs here? Let us know!</p>
 
 ---
 

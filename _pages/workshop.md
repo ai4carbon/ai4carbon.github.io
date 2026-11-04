@@ -154,6 +154,36 @@ nav_order: 1
   border-left: 4px solid var(--global-theme-color);
   font-weight: 500;
 }
+
+.speaker-initials {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  border: 3px solid var(--global-theme-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--global-theme-color);
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.form-embed {
+  border: 2px solid var(--global-divider-color);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 1rem 0;
+  background: #fff;
+}
+
+.form-embed iframe {
+  width: 100%;
+  height: 900px;
+  border: 0;
+  display: block;
+}
 </style>
 
 ## Upcoming Workshops & Sessions
@@ -164,6 +194,70 @@ The AI4Carbon Initiative fosters cutting-edge discussions on machine learning ap
 </div>
 
 ---
+
+<div class="event-card">
+<h2>🚀 2nd Virtual Workshop</h2>
+
+<div class="badge">Workshop</div>
+<div class="badge">November 19, 2026</div>
+
+<h3>The Next Generation of Atmospheric Transport Models?</h3>
+
+<p>Several groups are currently making atmospheric transport models faster, simpler or differentiable – from GPU and modern-language ports of existing codes, to machine learning emulators of Eulerian models and of Lagrangian footprints. This workshop brings these efforts together to compare approaches, find a common vocabulary, and discuss how next-generation transport models should be evaluated.</p>
+
+<div class="event-details">
+  <strong>📅 Date & Time:</strong> Thursday, November 19th, 2026<br>
+  <strong>🕐 Global Times:</strong> 4–6pm CET / 3pm GMT / 10am EST / 7am PST / 11pm AWST<br>
+  <strong>💻 Format:</strong> Virtual – lightning talks, then breakout groups and plenary discussion<br>
+  <strong>👥 Organized by:</strong> Yuming Jin, Elena Fillola, Vitus Benson
+</div>
+
+<h4>Lightning Talks</h4>
+
+<div class="speakers-grid">
+  <div class="speaker-card">
+    <img src="/assets/img/speakers/matt_rigby.png" alt="Matt Rigby">
+    <h4>Matt Rigby</h4>
+    <p><strong>University of Bristol</strong></p>
+    <a href="https://www.bristol.ac.uk/person/Matthew-Rigby-582d62b3-99e9-44ca-8353-927860796902/" target="_blank">Profile</a>
+  </div>
+  <div class="speaker-card">
+    <img src="/assets/img/speakers/christian_frankenberg.png" alt="Christian Frankenberg">
+    <h4>Christian Frankenberg</h4>
+    <p><strong>Caltech</strong></p>
+    <a href="https://www.gps.caltech.edu/people/christian-frankenberg" target="_blank">Profile</a>
+  </div>
+  <div class="speaker-card">
+    <img src="/assets/img/speakers/michael_bertolacci.png" alt="Michael Bertolacci">
+    <h4>Michael Bertolacci</h4>
+    <p><strong>University of Wollongong</strong></p>
+    <a href="https://mbertolacci.github.io/" target="_blank">Website</a>
+  </div>
+  <div class="speaker-card">
+    <img src="/assets/img/organizers/frederic_chevallier.png" alt="Frédéric Chevallier">
+    <h4>Frédéric Chevallier</h4>
+    <p><strong>LSCE</strong></p>
+    <a href="https://www.lsce.ipsl.fr/Phocea/Pisp/index.php?nom=frederic.chevallier" target="_blank">Profile</a>
+  </div>
+  <div class="speaker-card">
+    <img src="/assets/img/organizers/vitus_benson.png" alt="Vitus Benson">
+    <h4>Vitus Benson</h4>
+    <p><strong>MPI for Biogeochemistry</strong></p>
+    <a href="https://vitusbenson.github.io/" target="_blank">Website</a>
+  </div>
+</div>
+
+<p>Working on a related effort? Suggest a lightning talk in the registration form by <strong>November 12th</strong>.</p>
+
+<h4>Register</h4>
+
+<div class="form-embed">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUAhEkm-PnDAdYbpTbvIAfLGafzWZTd6GUnp2r3TV9mknkyw/viewform?embedded=true" loading="lazy" title="Workshop registration form">Loading…</iframe>
+</div>
+
+<a href="https://forms.gle/VFurP8Kr614PFfxW9" class="action-button" target="_blank">📝 Open the form in a new tab</a>
+
+</div>
 
 <div class="event-card">
 <h2>🌍 EGU 2026 – Vienna, Austria</h2>
@@ -232,7 +326,8 @@ The AI4Carbon Initiative fosters cutting-edge discussions on machine learning ap
 <div class="event-details">
   <strong>📅 Date & Time:</strong> November 7th, 2024<br>
   <strong>⏱️ Duration:</strong> ~2 hours<br>
-  <strong>🕐 Global Times:</strong> 5pm CET / 4pm GMT / 11am EST / 8am PST / 11pm ICT
+  <strong>🕐 Global Times:</strong> 5pm CET / 4pm GMT / 11am EST / 8am PST / 11pm ICT<br>
+  <strong>👥 Organized by:</strong> Yuming Jin, Nikhil Dadheech, Elena Fillola, Sam Upton, Vitus Benson
 </div>
 
 <h4 style="margin-top: 1.5rem;">Workshop Format</h4>
