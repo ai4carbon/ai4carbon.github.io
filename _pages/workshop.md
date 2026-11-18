@@ -267,8 +267,6 @@ The AI4Carbon Initiative fosters cutting-edge discussions on machine learning ap
   </div>
 </div>
 
-<p>Working on a similar effort? Suggest a lightning talk in the registration form by <strong>November 12th</strong>.</p>
-
 <h4>Register</h4>
 
 <div class="form-embed">
