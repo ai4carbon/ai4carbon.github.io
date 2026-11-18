@@ -258,6 +258,13 @@ The AI4Carbon Initiative fosters cutting-edge discussions on machine learning ap
     <p><strong>MPI for Biogeochemistry</strong></p>
     <a href="https://vitusbenson.github.io/" target="_blank">Website</a>
   </div>
+  <div class="speaker-card">
+    <img src="/assets/img/speakers/miguel_amaral.png" alt="Miguel Amaral">
+    <h4>Miguel Amaral</h4>
+    <p class="talk-topic">Formal verification</p>
+    <p><strong>University of Vienna</strong></p>
+    <a href="https://img.univie.ac.at/ueber-uns/mitarbeiterinnen/einzelansicht?tx_univiepersonal_pi1%5Baction%5D=show&tx_univiepersonal_pi1%5Bcontroller%5D=Persons&tx_univiepersonal_pi1%5Buid%5D=66087&tx_univiepersonal_pi1%5Bunitid%5D=333&cHash=1f7e36c2146f2f890fe3821c22204beb" target="_blank">Profile</a>
+  </div>
 </div>
 
 <p>Working on a similar effort? Suggest a lightning talk in the registration form by <strong>November 12th</strong>.</p>
