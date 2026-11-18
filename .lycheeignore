@@ -1,2 +1,4 @@
 # Liquid template placeholders in _pages/resources.md, not real links
 dataset\.(url|img)
+# LinkedIn answers automated requests with status 999
+linkedin\.com
